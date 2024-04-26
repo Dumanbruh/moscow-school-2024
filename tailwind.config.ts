@@ -8,10 +8,23 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      screens: {
+        'sm': '430px',
+        'md': '768px',
+        'lg': '1440px',
+        'xl': '1920px',
+      },
+      fontFamily: {
+        'sans': ['Gotham Pro Regular', 'sans-serif'], // Default sans-serif font
+        'bold': ['Gotham Pro Bold', 'sans-serif'],
+        'medium': ['Gotham Pro Medium', 'sans-serif'],
+        'light': ['Gotham Pro Light', 'sans-serif'],
+        'mossport': ['Mossport', 'sans-serif'], // Additional custom font
+      },
+      colors: {
+        blue: "#001E72",
+        white: "#FFFFFF",
+        black: "#000000",
       },
     },
   },

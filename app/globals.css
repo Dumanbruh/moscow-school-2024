@@ -2,32 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    font-family: 'Gotham Pro Regular', sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.header {
+    font-family: 'Mossport', sans-serif;
+    font-size: 64px;
+    color: white;
+    text-transform: uppercase;
+}
+
+@font-face {
+    font-family: Mossport;
+    /* Гарнитура шрифта */
+    src: url(../public/fonts/Mossport.otf);
+    /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Gotham Pro Bold;
+    /* Гарнитура шрифта */
+    src: url(../public/fonts/GothaProBol.otf);
+    /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Gotham Pro Medium;
+    /* Гарнитура шрифта */
+    src: url(../public/fonts/GothaProMed.otf);
+    /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Gotham Pro Light;
+    /* Гарнитура шрифта */
+    src: url(../public/fonts/GothaProLig.otf);
+    /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Gotham Pro Regular;
+    /* Гарнитура шрифта */
+    src: url(../public/fonts/GothaProReg.otf);
+    /* Путь к файлу со шрифтом */
 }
