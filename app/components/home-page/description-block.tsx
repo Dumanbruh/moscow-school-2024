@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import Header from '../ui/header'
 import Image from 'next/image';
@@ -17,11 +19,11 @@ const Description = () => {
                 <p className={"font-medium text-blue text-2xl"}>
                     Приглашаем москвичей и гостей столицы на самое масштабное событием в мире школьного спорта, на котором подведут итоги спортивного сезона 2023/2024 учебного года. Пройдут встречи с легендарными спортсменами, мастер – классы от звезд, финальные матчи школьных спортивных лиг, футбольный матч с игроками медийной футбольной лиги, игры ГТО, экстрим – шоу ВМХ, турниры по видам спорта, награждение лучших спортивных клубов в системе московского образования и многое другое. Вечером всех участников мероприятия ждет концертная программа, которая будет включать в себя розыгрыши призов, выступления творческих коллективов города, а также популярных артистов: Мии Бойка, ST и Звонкого.
                 </p>
-                {/* <div className={"flex flex-row gap-9"}>
+                <div className={"flex justify-center flex-row gap-9"}>
                     {images.map((image, index) => (
-                        <Image key={index} width={330} height={178} src={image} alt={"description"} />
+                        <img key={index} style={{ width: "20%" }} src={image} alt={"description"} />
                     ))}
-                </div> */}
+                </div>
             </div>
             <div className={
                 "bg-[url('/images/desktop/home/desc/festival-color.png')] bg-contain bg-no-repeat bg-right w-[100%] h-[700px] absolute bottom-[-25%] right-[0%] -z-10"

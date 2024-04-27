@@ -3,7 +3,7 @@ import Header from '../ui/header'
 
 const Headliners = () => {
     return (
-        <div className={"relative my-20"}>
+        <div className={"relative my-32"}>
             <div className={"flex flex-col gap-16 px-40"}>
                 <Header text={"хедлайнеры фестиваля"} color='red' />
                 <div className={"flex flex-col gap-2"}>
