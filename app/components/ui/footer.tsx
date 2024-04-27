@@ -6,7 +6,7 @@ const Footer = () => {
         <div className={"flex flex-col w-full"}>
             <div className={"flex flex-col justify-center items-center w-full mb-14"}>
                 <div className={"flex flex-col sm:flex-row gap-32"}>
-                    <div className={"flex flex-col gap-7 sm:min-w-[536px] sm:mt-12 relative"}>
+                    <div className={"flex flex-col sm:gap-7 sm:min-w-[536px] sm:mt-12 relative"}>
                         <div className={
                             "bg-[url('/images/desktop/bg/footer-header.svg')] bg-cover bg-center flex justify-center items-center w-[100%] h-[74px] absolute top-0 left-[-30%] -z-10"
                         }>
