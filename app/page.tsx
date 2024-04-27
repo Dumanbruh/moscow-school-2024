@@ -1,15 +1,15 @@
-import Image from "next/image";
+import Description from "./components/home-page/description-block";
+import Headliners from "./components/home-page/headliners-block";
+import Map from "./components/home-page/map-block";
 import Cover from "./components/ui/cover";
-import Header from "./components/ui/header";
 
 export default function Home() {
   return (
-    <div className={"w-full flex flex-col"}>
+    <div className={"flex flex-col w-full"}>
       <Cover />
-      <div className={"mx-auto"}>
-        <Header />
-
-      </div>
+      <Description />
+      <Headliners />
+      <Map />
     </div>
   );
 }

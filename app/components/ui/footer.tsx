@@ -29,10 +29,9 @@ const Footer = () => {
                             <p className={"font-light text-lg text-[#262626]"}>г.Москва ул. Лужники, дом 24, строение 11</p>
                         </div>
                     </div>
-
                     <iframe
                         className="w-full h-[450px] sm:w-[390px] lg:w-[590px]"
-                        src="https://yandex.com/map-widget/v1/?um=constructor%3A48d48ecdf9dac9ca29b98da2f451f4241a37973675f422de5a973a001b82195e&amp;source=constructor"
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A0da589e20425482930766656c4a5e5a0f6b30809b740f3a6c7f3411f90130aae&amp;source=constructor"
                     />
                 </div>
             </div>
