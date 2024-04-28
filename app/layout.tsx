@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import Navbar from "./components/ui/navbar";
 import Footer from "./components/ui/footer";
 
@@ -26,7 +29,7 @@ export default function RootLayout({
         <main>
           {children}
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
