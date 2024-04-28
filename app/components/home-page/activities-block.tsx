@@ -34,9 +34,9 @@ const Activities = () => {
                     ))}
                 </Slider>
             </div>
-            <div className={
+            {/* <div className={
                 "bg-[url('/images/desktop/home/activities/activities-bg.png')] bg-contain bg-no-repeat bg-left w-[100%] h-[700px] absolute bottom-[-45%] left-0 -z-10"
-            } />
+            } /> */}
         </div>
     )
 }

@@ -16,7 +16,7 @@ const Cover = ({ title }: CoverProps) => {
         {title
           ?
           <div className="z-20 flex justify-center items-center w-[100%] ">
-            <h2 className="font-mossport text-8xl text-blue whitespace-pre-line">{title}</h2>
+            <h2 className="font-mossport text-8xl text-blue uppercase whitespace-pre-line">{title}</h2>
           </div>
           :
           <div className="bg-[url('/images/desktop/bg/cover-main-text.svg')] bg-no-repeat bg-center w-full h-full absolute top-0 left-0" />

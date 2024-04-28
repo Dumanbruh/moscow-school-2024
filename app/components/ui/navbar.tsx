@@ -33,7 +33,7 @@ const Navbar = () => {
                     <Image width={58} height={48} src={"/images/desktop/logos/education.svg"} alt={"education"} />
                     <Image width={160} height={48} src={"/images/desktop/logos/mossport.svg"} alt={"mossport"} />
                 </div>
-                <div className={"w-full hidden sm:flex justify-center flex-row sm:gap-12"}>
+                <div className={"w-full hidden sm:flex justify-center flex-col md:flex-row gap-2 md:gap-12"}>
                     <NavItem name="Главная" url="/" />
                     <NavItem name="Семейные активности" url="/family-activities" />
                     <NavItem name="День футбола" url="/football-day" />
