@@ -67,8 +67,8 @@ const Schedule = () => {
     ];
 
     return (
-        <div className={"relative"}>
-            <div className={"flex flex-col gap-16 mt-20 mb-48"}>
+        <div className={"relative mt-20 pb-48"}>
+            <div className={"flex flex-col gap-16"}>
                 <Header text={"расписание сцены"} color='blue' />
                 <div className={"flex flex-col w-full items-center gap-2"}>
                     {schedule.map((event, index) => (
@@ -85,6 +85,9 @@ const Schedule = () => {
                     ))}
                 </div>
             </div>
+            <div className={
+                "bg-[url('/images/desktop/home/schedule/bg.png')] bg-contain bg-no-repeat bg-right w-[100%] h-[900px] absolute bottom-0 right-0 -z-10"
+            } />
         </div >
     )
 }

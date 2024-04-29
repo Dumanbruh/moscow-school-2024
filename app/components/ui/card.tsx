@@ -21,7 +21,7 @@ const Card = ({
             <div className={"w-[40%] h-[100%] relative"}>
                 <img src={img} alt={img} className={"w-[100%] h-[100%] object-cover"} />
             </div>
-            <div className={"w-[40%] h-[100%] flex flex-col gap-6"}>
+            <div className={"w-[50%] h-[100%] flex flex-col gap-6"}>
                 <div className={"flex flex-col items-center py-2 px-4 max-w-[90px]"} style={{
                     background: "linear-gradient(90deg, #FFD324 0%, #FF8900 100%)",
                     borderRadius: "5px",
@@ -38,7 +38,7 @@ const Card = ({
                 </div>
 
                 <div>
-                    <p className={"font-medium text-xl"} style={{ lineHeight: "120%" }}>{desc}</p>
+                    <p className={"font-medium text-xl"} style={{ lineHeight: "120%", whiteSpace: "pre-line" }}>{desc}</p>
                 </div>
             </div>
         </div>
