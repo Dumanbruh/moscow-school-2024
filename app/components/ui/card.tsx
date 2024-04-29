@@ -36,7 +36,7 @@ const Card = ({
                 <p className={"header"} style={{ letterSpacing: "-1px", lineHeight: "60px", whiteSpace: "pre-line" }}>{title}</p>
 
                 <div>
-                    <p className={"font-medium text-xl"} style={{ lineHeight: "120%", whiteSpace: "pre-line" }}>{desc}</p>
+                    <p className={"font-medium text-xl cursor-pointer"} style={{ lineHeight: "120%", whiteSpace: "pre-line" }}>{desc}</p>
                 </div>
             </div>
         </div>

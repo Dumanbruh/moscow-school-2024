@@ -1,8 +1,11 @@
+"use client"
+
 import React from 'react'
+import Button from '../ui/button'
 
 const Register = () => {
     return (
-        <div className={"flex flex-col gap-16 mt-20 mb-64 px-64"}>
+        <div className={"flex justify-center items-center flex-col gap-16 mt-20 mb-64 px-64"}>
             <div dangerouslySetInnerHTML={{
                 __html: `
                 <div>
@@ -26,6 +29,8 @@ const Register = () => {
                 <img src="/images/desktop/gto-games/register/2.png" alt="register-2" />
                 <img src="/images/desktop/gto-games/register/3.png" alt="register-3" />
             </div>
+
+            <Button w={"309px"} h={"70px"} title={"РЕГИСТРАЦИЯ"} onClick={() => { }} />
         </div>
     )
 }
