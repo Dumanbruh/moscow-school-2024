@@ -5,9 +5,10 @@ import Button from '../ui/button'
 
 const Register = () => {
     return (
-        <div className={"flex justify-center items-center flex-col gap-16 mt-20 mb-64 px-64"}>
-            <div dangerouslySetInnerHTML={{
-                __html: `
+        <div className={"relative mt-20 pb-64 px-6 md:px-64"}>
+            <div className={"flex justify-center items-center flex-col gap-16"}>
+                <div dangerouslySetInnerHTML={{
+                    __html: `
                 <div>
                     <p class='font-medium text-2xl text-blue' style='line-height: 32px; white-space: pre-line'>Все мы знаем, что такое комплекс ГТО, но же такое Игры ГТО?</p>
                     <p class='font-medium text-2xl text-blue' style='line-height: 32px; white-space: pre-line'>Рассказываем! Игры ГТО - это новый зрелищный вид спорта на базе нормативов ГТО. На отдельных дорожках для каждого участника установлены спортивные снаряды, которые необходимо пройти всей команде. Тут и упражнения на скорость, силу, гибкость и даже киберспорт.</p>
@@ -23,14 +24,18 @@ const Register = () => {
                 
                     <p class='font-medium text-2xl text-blue' style='line-height: 32px; white-space: pre-line; margin-top: 20px'>Кроме того любой желающий сможет попробовать свои силы в прохождении трассы, состав участников для свободного выполнения этапов эстафеты не менее 2 человек (регистрация будет проходить на самом мероприятии).</p>
                 </div>`
-            }} />
-            <div className={"flex flex-col md:flex-row justify-center items-center gap-7"}>
-                <img src="/images/desktop/gto-games/register/1.png" alt="register-1" />
-                <img src="/images/desktop/gto-games/register/2.png" alt="register-2" />
-                <img src="/images/desktop/gto-games/register/3.png" alt="register-3" />
-            </div>
+                }} />
+                <div className={"flex flex-col md:flex-row justify-center items-center gap-7"}>
+                    <img src="/images/desktop/gto-games/register/1.png" alt="register-1" />
+                    <img src="/images/desktop/gto-games/register/2.png" alt="register-2" />
+                    <img src="/images/desktop/gto-games/register/3.png" alt="register-3" />
+                </div>
 
-            <Button w={"309px"} h={"70px"} title={"РЕГИСТРАЦИЯ"} onClick={() => { }} />
+                <Button title={"ЗАРЕГИСТРИРОВАТЬСЯ"} onClick={() => { }} />
+                <div className={
+                    "bg-[url('/images/desktop/home/activities/activities-bg.png')] bg-contain bg-no-repeat bg-left w-[100%] h-[600px] absolute bottom-0 left-0 -z-10"
+                } />
+            </div>
         </div>
     )
 }
