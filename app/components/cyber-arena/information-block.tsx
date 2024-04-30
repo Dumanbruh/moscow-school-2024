@@ -2,9 +2,9 @@ import React from 'react'
 
 const Information = () => {
     const images = [
-        "/images/desktop/gto-games/register/1.png",
-        "/images/desktop/gto-games/register/2.png",
-        "/images/desktop/gto-games/register/3.png"
+        "/images/desktop/cyber/1.png",
+        "/images/desktop/cyber/2.png",
+        "/images/desktop/cyber/3.png"
     ];
 
     return (
@@ -18,7 +18,7 @@ const Information = () => {
                 </p>
                 <div className={"flex flex-col md:flex-row justify-center items-center gap-7"}>
                     {images.map((image, index) => (
-                        <img key={index} src={image} alt={"register-" + index} />
+                        <img key={index} src={image} alt={"cyber-" + index} />
                     ))}
                 </div>
 

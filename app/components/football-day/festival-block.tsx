@@ -4,9 +4,8 @@ import Button from '../ui/button'
 
 const Festival = () => {
   const images = [
-    "/images/desktop/gto-games/register/1.png",
-    "/images/desktop/gto-games/register/2.png",
-    "/images/desktop/gto-games/register/3.png",
+    "/images/desktop/football-day/festival/1.png",
+    "/images/desktop/football-day/festival/2.png",
   ]
 
   return (

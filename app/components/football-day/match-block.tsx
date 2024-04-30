@@ -6,9 +6,9 @@ import Button from '../ui/button'
 
 const Match = () => {
     const images = [
-        "/images/desktop/gto-games/register/1.png",
-        "/images/desktop/gto-games/register/2.png",
-        "/images/desktop/gto-games/register/3.png",
+        "/images/desktop/football-day/match/1.png",
+        "/images/desktop/football-day/match/2.png",
+        "/images/desktop/football-day/match/3.png",
     ]
 
     return (

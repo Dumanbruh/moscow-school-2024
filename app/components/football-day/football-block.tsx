@@ -3,9 +3,9 @@ import Header from '../ui/header'
 
 const Football = () => {
     const images = [
-        "/images/desktop/gto-games/register/1.png",
-        "/images/desktop/gto-games/register/2.png",
-        "/images/desktop/gto-games/register/3.png",
+        "/images/desktop/football-day/football/1.png",
+        "/images/desktop/football-day/football/2.png",
+        "/images/desktop/football-day/football/3.png",
     ]
 
     return (

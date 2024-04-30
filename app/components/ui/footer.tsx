@@ -1,3 +1,6 @@
+"use client"
+
+import { handleOpenNewTab } from '@/app/common/openNewTab'
 import Image from 'next/image'
 import React from 'react'
 
@@ -20,7 +23,7 @@ const Footer = () => {
 
                         <div className={"flex flex-col gap-1"}>
                             <p className={"font-bold text-lg text-[#202020]"}>Эл. почта</p>
-                            <a className={"font-light text-lg text-[#262626] underline"}>school.moscow.sport@yandex.ru</a>
+                            <a href={"mailto:school.moscow.sport@yandex.ru"} className={"font-light text-lg text-[#262626] underline"}>school.moscow.sport@yandex.ru</a>
                         </div>
 
                         <div className={"flex flex-col gap-1"}>
@@ -36,8 +39,22 @@ const Footer = () => {
                 </div>
             </div>
             <div className={"flex flex-row gap-6 border-t-2 border-[#929292] border-opacity-20 py-5 px-20"}>
-                <Image width={58} height={44} src={"/images/desktop/logos/footer-education.svg"} alt={"footer-education"} />
-                <Image width={150} height={44} src={"/images/desktop/logos/footer-mossport.svg"} alt={"footer-mossport"} />
+                <Image width={58} height={44}
+                    src={"/images/desktop/logos/footer-education.svg"}
+                    className='cursor-pointer'
+                    onClick={() => {
+                        handleOpenNewTab("https://shkolamoskva.ru/")
+                    }}
+                    alt={"footer-education"}
+                />
+                <Image width={150} height={44}
+                    src={"/images/desktop/logos/footer-mossport.svg"}
+                    className='cursor-pointer'
+                    onClick={() => {
+                        handleOpenNewTab("https://moscow.sport")
+                    }}
+                    alt={"footer-mossport"}
+                />
             </div>
         </footer>
     )

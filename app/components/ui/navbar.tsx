@@ -1,5 +1,6 @@
 "use client";
 
+import { handleOpenNewTab } from '@/app/common/openNewTab';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -30,8 +31,24 @@ const Navbar = () => {
         <div className={"w-full flex"}>
             <div className={"w-full flex flex-col gap-8"}>
                 <div className={"flex flex-row mt-8 gap-2 sm:ml-40"}>
-                    <Image width={58} height={48} src={"/images/desktop/logos/education.svg"} alt={"education"} />
-                    <Image width={160} height={48} src={"/images/desktop/logos/mossport.svg"} alt={"mossport"} />
+                    <Image
+                        width={58} height={48}
+                        src={"/images/desktop/logos/education.svg"}
+                        className='cursor-pointer'
+                        onClick={() => {
+                            handleOpenNewTab("https://shkolamoskva.ru/")
+                        }}
+                        alt={"education"}
+                    />
+                    <Image
+                        width={160} height={48}
+                        src={"/images/desktop/logos/mossport.svg"}
+                        className='cursor-pointer'
+                        onClick={() => {
+                            handleOpenNewTab("https://moscow.sport")
+                        }}
+                        alt={"mossport"}
+                    />
                 </div>
                 <nav className={"w-full hidden sm:flex justify-center flex-col md:flex-row gap-2 md:gap-12"}>
                     <NavItem name="Главная" url="/" />

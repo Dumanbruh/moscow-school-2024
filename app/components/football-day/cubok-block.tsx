@@ -3,9 +3,9 @@ import Header from '../ui/header'
 
 const Cubok = () => {
     const images = [
-        "/images/desktop/gto-games/register/1.png",
-        "/images/desktop/gto-games/register/2.png",
-        "/images/desktop/gto-games/register/3.png",
+        "/images/desktop/football-day/cubok/1.png",
+        "/images/desktop/football-day/cubok/2.png",
+        "/images/desktop/football-day/cubok/3.png",
     ]
 
     return (

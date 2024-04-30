@@ -3,8 +3,8 @@ import Header from '../ui/header'
 
 const Showball = () => {
   const images = [
-    "/images/desktop/gto-games/register/1.png",
-    "/images/desktop/gto-games/register/2.png",
+    "/images/desktop/football-day/showball/1.png",
+    "/images/desktop/football-day/showball/2.png",
   ]
 
   return (
