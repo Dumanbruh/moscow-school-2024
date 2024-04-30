@@ -4,6 +4,12 @@ import React from 'react'
 import Button from '../ui/button'
 
 const Register = () => {
+    const images = [
+        "/images/desktop/gto-games/register/1.png",
+        "/images/desktop/gto-games/register/2.png",
+        "/images/desktop/gto-games/register/3.png"
+    ]
+
     return (
         <div className={"relative mt-20 pb-64 px-6 md:px-64"}>
             <div className={"flex justify-center items-center flex-col gap-16"}>
@@ -26,9 +32,9 @@ const Register = () => {
                 </div>`
                 }} />
                 <div className={"flex flex-col md:flex-row justify-center items-center gap-7"}>
-                    <img src="/images/desktop/gto-games/register/1.png" alt="register-1" />
-                    <img src="/images/desktop/gto-games/register/2.png" alt="register-2" />
-                    <img src="/images/desktop/gto-games/register/3.png" alt="register-3" />
+                    {images.map((image, index) => (
+                        <img key={index} src={image} alt={"register-" + index} />
+                    ))}
                 </div>
 
                 <Button title={"ЗАРЕГИСТРИРОВАТЬСЯ"} onClick={() => { }} />

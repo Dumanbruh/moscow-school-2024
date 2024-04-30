@@ -26,8 +26,8 @@ const Header = ({ text, color }: HeaderProps) => {
     }
 
     return (
-        <div className={`h-[107px] w-full bg-no-repeat bg-contain bg-center flex justify-center items-center`} style={{ backgroundImage: changeHeader(color) }}>
-            <h1 className={"header"} style={{ fontSize: "3.7vw" }}>{text}</h1>
+        <div className={`h-[133px] w-full bg-no-repeat bg-cover bg-center flex justify-center items-center`} style={{ backgroundImage: changeHeader(color) }}>
+            <h1 className={"header"} style={{ fontSize: "64px", textAlign: "center", whiteSpace: "pre-line", lineHeight: "64px" }}>{text}</h1>
         </div>
     )
 }
