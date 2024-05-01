@@ -1,14 +1,9 @@
 import React, { ReactNode } from 'react'
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperProps } from "swiper/react";
-import Arrow from "@/public/images/desktop/slider/arrow.svg";
 import { SwiperOptions } from 'swiper/types';
 
 type SwiperParams = {
-    breakpoints?: {
-        [width: number]: SwiperOptions;
-        [ratio: string]: SwiperOptions;
-    };
     children: ReactNode | ReactNode[];
     isLoading: boolean;
     turnOnNavigation?: boolean;
@@ -17,10 +12,7 @@ type SwiperParams = {
 };
 
 const Slider = ({
-    breakpoints,
     children,
-    isLoading,
-    isMobile,
     turnOnNavigation = true,
     id
 }: SwiperParams) => {
@@ -65,17 +57,13 @@ const Slider = ({
 
     const swiperParams: SwiperProps = {
         modules: [Navigation],
-        spaceBetween: isMobile ? "16px" : "48px",
+        spaceBetween: 48,
         speed: 1000,
         navigation: navigation,
         style: {
             overflow: "visible",
-            width: isMobile ? "100%" : "1100px",
-            display: "relative",
-            height: "100%",
         },
-        slidesPerView: isMobile ? 1 : "auto",
-        resistance: false,
+        slidesPerView: "auto",
         onInit: (e: any) => setShowRightArrow(e.allowSlideNext),
         onActiveIndexChange: (e: any) =>
             handleChangeIndex(e.activeIndex, e.progress),
@@ -86,7 +74,7 @@ const Slider = ({
     return (
         <div className='w-full flex flex-col gap-5 mt-5'>
             <div className={`w-full flex flex-row justify-between relative`}>
-                <div className={`next-btn-${id} absolute z-10 right-[15%]`}
+                <div className={`next-btn-${id} hidden sm:absolute z-10 right-[15%]`}
                     style={{
                         display: turnOnNavigation && showRightArrow ? "block" : "none",
                         top: "50%",
@@ -97,7 +85,7 @@ const Slider = ({
                 <Swiper {...swiperParams}>
                     {children}
                 </Swiper>
-                <div className={`prev-btn-${id} absolute z-10 left-[15%]`}
+                <div className={`prev-btn-${id} hidden sm:absolute z-10 left-[15%]`}
                     style={{
                         display: turnOnNavigation && showLeftArrow ? "block" : "none",
                         top: "50%",

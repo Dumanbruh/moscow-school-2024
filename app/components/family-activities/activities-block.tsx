@@ -3,9 +3,13 @@
 import React from 'react'
 import Slider from '../ui/slider';
 import Card from '../ui/card';
-import { SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-const Activities = () => {
+interface ActivitiesProps {
+    isMobile?: boolean
+}
+
+const Activities = ({ isMobile }: ActivitiesProps) => {
     const activities = [
         {
             "title": "Всей семьей на старт",
@@ -42,16 +46,18 @@ const Activities = () => {
     ];
 
     return (
-        <div className={"relative"}>
-            <div className={"flex flex-col gap-16 mt-20 mb-40 overflow-visible"}>
-                <Slider id="activities" isLoading={false}>
-                    {activities.map((activity, index) => (
-                        <SwiperSlide key={index}>
-                            <Card title={activity.title} desc={activity.desc} url={activity.url} img={activity.img} date={activity.date} />
-                        </SwiperSlide>
-                    ))}
-                </Slider>
-            </div>
+        <div className={"relative mb-14"}>
+            <Swiper
+                spaceBetween={48}
+                slidesPerView={'auto'}
+                style={{ overflow: "visible", paddingLeft: isMobile ? "50px" : "140px" }}
+            >
+                {activities.map((activity, index) => (
+                    <SwiperSlide key={index} style={{ width: isMobile ? "400px" : "1100px" }}>
+                        <Card isMobile={isMobile} title={activity.title} desc={activity.desc} img={activity.img} date={activity.date} url={activity.url} />
+                    </SwiperSlide>
+                ))}
+            </Swiper>
         </div>
     )
 }
