@@ -24,7 +24,7 @@ const Activities = ({ isMobile }: ActivitiesProps) => {
             Известный российский гроссмейстер, проведёт сеанс одновременной игры с победителями и призерами школьных соревнований. Любой желающий сможет понаблюдать за процессом игры, поболеть за своих фаворитов, а также ответить на вопрос - одолеет ли кто-то великого шахматиста?`,
             "img": "/images/desktop/sports/2.png",
             "date": "1 ИЮНЯ",
-            "url": "https://patriotsport.moscow/festival-shkolnogo-sporta/"
+            "url": "https://mcvp.ru/city_events/festival-shkolnogo-sporta-shahmaty"
         },
         {
             "title": "Лазертаг",
@@ -33,7 +33,7 @@ const Activities = ({ isMobile }: ActivitiesProps) => {
             В течение всего дня на площадке пройдут увлекательные состязания по лазерному бою состав команды 7 человек.`,
             "img": "/images/desktop/sports/3.png",
             "date": "1 ИЮНЯ",
-            "url": "https://patriotsport.moscow/festival-shkolnogo-sporta/"
+            "url": "https://mcvp.ru/city_events/festival-shkolnogo-sporta-lazertag"
         },
         {
             "title": "Путь ниндзя",
@@ -43,7 +43,7 @@ const Activities = ({ isMobile }: ActivitiesProps) => {
             Будь готов к испытаниям и ярким эмоциям - до встречи!`,
             "img": "/images/desktop/sports/4.png",
             "date": "1 ИЮНЯ",
-            "url": "https://patriotsport.moscow/festival-shkolnogo-sporta/"
+            "url": "https://mcvp.ru/city_events/festival-shkolnogo-sporta-put-nindzya"
         },
         {
             "title": "Ozon школьная лига по тэг-регби",
@@ -72,7 +72,7 @@ const Activities = ({ isMobile }: ActivitiesProps) => {
             Приходите на игры поддержать свои команды!`,
             "img": "/images/desktop/sports/8.png",
             "date": "1 ИЮНЯ",
-            "url": "https://patriotsport.moscow/festival-shkolnogo-sporta/"
+            "url": "https://mcvp.ru/city_events/turnir-po-volejbolu"
         },
         {
             "title": "Товарищеский турнир по волейболу",

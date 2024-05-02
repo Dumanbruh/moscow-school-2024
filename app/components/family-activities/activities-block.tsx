@@ -23,7 +23,7 @@ const Activities = ({ isMobile }: ActivitiesProps) => {
             "desc": "Если ты готов бросить вызов самому себе и испытать свои силы, то приглашаем тебя и твою команду пройти свой Путь ниндзя на нашем фестивале. Трасса с разнообразными препятствиями, незабываемые впечатления, масса положительных эмоций и настоящая командная работа — вот что ждет каждого участника нашей интерактивной зоны.",
             "img": "/images/desktop/activities/2.png",
             "date": "1 ИЮНЯ",
-            "url": "https://patriotsport.moscow/festival-shkolnogo-sporta/"
+            "url": "https://mcvp.ru/city_events/festival-shkolnogo-sporta-put-nindzya"
         },
         {
             "title": "Игры ГТО",
@@ -34,7 +34,7 @@ const Activities = ({ isMobile }: ActivitiesProps) => {
             (2 родителя и 1 ребенок)`,
             "img": "/images/desktop/activities/3.png",
             "date": "1 ИЮНЯ",
-            "url": "https://patriotsport.moscow/festival-shkolnogo-sporta/"
+            "url": "https://mcvp.ru/city_events/festival-shkolnogo-sporta-igry-gto"
         },
         {
             "title": `Любительский турнир
