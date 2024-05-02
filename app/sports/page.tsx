@@ -26,7 +26,7 @@ export default function Page() {
                     <Activities isMobile={isMobile} />
                 </div>
                 <div className={
-                    "bg-[url('/images/desktop/home/activities/activities-bg.png')] bg-contain bg-no-repeat bg-left w-[100%] h-[700px] absolute top-[80%] left-0 -z-10"
+                    "bg-[url('/images/desktop/home/activities/activities-bg.png')] bg-contain bg-no-repeat bg-left w-[100%] h-[436px] md:h-[700px] absolute top-[70%] md:top-[80%] left-0 -z-10"
                 } />
             </div>
         </div>

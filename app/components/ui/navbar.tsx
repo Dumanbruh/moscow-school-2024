@@ -30,7 +30,7 @@ const Navbar = () => {
     return (
         <div className={"w-full flex"}>
             <div className={"w-full flex flex-col gap-8"}>
-                <div className={"flex flex-row mt-8 gap-2 mx-12 md:mx-40"}>
+                <div className={"flex flex-row mt-8 my-12 md:my-0 gap-2 mx-12 md:mx-40"}>
                     <Image
                         width={58} height={48}
                         src={"/images/desktop/logos/education.svg"}

@@ -1,5 +1,4 @@
 import React from 'react'
-import Slider from '../ui/slider';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Card from '../ui/card';
 
@@ -85,11 +84,11 @@ const Activities = ({ isMobile }: ActivitiesProps) => {
     ];
 
     return (
-        <div className={"relative mb-14"}>
+        <div className={"relative mb-14 pt-16"}>
             <Swiper
                 spaceBetween={48}
                 slidesPerView={'auto'}
-                style={{ overflow: "visible", paddingLeft: isMobile ? "50px" : "140px" }}
+                style={{ overflow: "visible", paddingLeft: isMobile ? "20px" : "140px" }}
             >
                 {activities.map((activity, index) => (
                     <SwiperSlide key={index} style={{ width: isMobile ? "400px" : "1100px" }}>

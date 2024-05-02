@@ -26,7 +26,7 @@ const Showball = () => {
         </div>
       </div>
       <div className={
-        "bg-[url('/images/desktop/home/activities/activities-bg.png')] bg-contain bg-no-repeat bg-left w-[100%] h-[600px] absolute bottom-0 left-0 -z-10"
+        "bg-[url('/images/desktop/home/activities/activities-bg.png')] bg-contain bg-no-repeat bg-left w-[100%] h-[320px] md:h-[600px] absolute bottom-[-12%] left-0 -z-10"
       } />
     </div>
   )

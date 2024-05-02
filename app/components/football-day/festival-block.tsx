@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../ui/header'
 import Button from '../ui/button'
+import { handleOpenNewTab } from '@/app/common/openNewTab'
 
 const Festival = () => {
   const images = [
@@ -26,7 +27,7 @@ const Festival = () => {
             <img key={index} src={image} alt={"description"} />
           ))}
         </div>
-        <Button title={"РЕГИСТРАЦИЯ"} onClick={() => { }} />
+        <Button title={"РЕГИСТРАЦИЯ"} onClick={() => {handleOpenNewTab("https://gto.patriotsport.moscow/gorodskie-meropriyatiya-gto/festival-vfsk-gto-po-otboru-uchastnikov-na-vserossijskie-etapy-sredi-obuchayushhihsya-obrazovatelnyh-organizatsij/")}} />
       </div>
       <div className={
         "bg-[url('/images/desktop/home/desc/festival-color.png')] bg-contain bg-no-repeat bg-right w-[100%] h-[700px] absolute bottom-[0] right-[0%] -z-10"

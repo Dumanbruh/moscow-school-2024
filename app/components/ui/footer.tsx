@@ -45,7 +45,7 @@ const Footer = () => {
         <footer className={"flex flex-col w-full"}>
             <div className={"flex flex-col justify-center items-center w-full mb-14"}>
                 <div className={"flex flex-col items-center md:flex-row gap-32"}>
-                    <div className={"flex flex-col items-center md:items-start sm:text-left sm:gap-7 sm:min-w-[536px] sm:mt-12 relative"}>
+                    <div className={"flex flex-col items-center md:items-start sm:text-left sm:gap-7 md:min-w-[536px] sm:mt-12 relative"}>
                         <div className={
                             "bg-[url('/images/desktop/bg/footer-header.svg')] bg-cover bg-center flex justify-center items-center w-[100%] h-[52px] md:h-[74px] absolute top-[-3%] md:top-[-6%] md:left-[-30%] -z-10"
                         }>
@@ -69,7 +69,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <iframe
-                        className="w-full h-[320px] md:h-[450px] lg:w-[590px]"
+                        className="w-full h-[320px] md:h-[450px] md:w-[590px]"
                         src="https://yandex.ru/map-widget/v1/?um=constructor%3A0da589e20425482930766656c4a5e5a0f6b30809b740f3a6c7f3411f90130aae&amp;source=constructor"
                     />
                 </div>

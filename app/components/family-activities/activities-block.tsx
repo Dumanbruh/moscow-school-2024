@@ -1,7 +1,6 @@
 "use client"
 
 import React from 'react'
-import Slider from '../ui/slider';
 import Card from '../ui/card';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -46,7 +45,7 @@ const Activities = ({ isMobile }: ActivitiesProps) => {
     ];
 
     return (
-        <div className={"relative mb-14"}>
+        <div className={"relative mb-14 pt-16"}>
             <Swiper
                 spaceBetween={48}
                 slidesPerView={'auto'}

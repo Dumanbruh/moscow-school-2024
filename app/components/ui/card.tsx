@@ -24,11 +24,25 @@ const Card = ({
             borderRadius: "32px"
         }}>
             <div className={"w-full md:w-[40%] h-[300px] md:h-[100%] relative"}>
+                <div className={"absolute w-full md:hidden top-0"} >
+                    <div className={"flex flex-col justify-center items-center"}>
+                        <div className={"py-[10px] px-[18px]"} style={{
+                            background: "linear-gradient(90deg, #FF6373 0%, #CC1427 100%)",
+                            borderRadius: "5px",
+                        }}>
+                            <p className={"font-regular text-xs text-white"} style={{
+                                lineHeight: "150%",
+                                letterSpacing: "0.1em",
+                                textTransform: "uppercase",
+                            }}>{date}</p>
+                        </div>
+                    </div>
+                </div>
                 <img src={img} alt={img} className={"w-[100%] h-[100%] object-cover rounded-[32px]"} />
             </div>
             <div className={"w-full md:w-[50%] h-[50%] md:h-[100%] relative"}>
                 <div className={"flex flex-col items-center px-5 gap-6"}>
-                    <div className={"hidden md:flex flex-col items-center py-2 px-4 max-w-[90px]"} style={{
+                    <div className={"hidden md:flex flex-col items-center py-[10px] px-[18px]"} style={{
                         background: "linear-gradient(90deg, #FFD324 0%, #FF8900 100%)",
                         borderRadius: "5px",
                     }}>
@@ -80,7 +94,7 @@ const Card = ({
                     </div>
                 }
             </div>
-        </div>
+        </div >
     )
 }
 
