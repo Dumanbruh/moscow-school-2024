@@ -45,7 +45,7 @@ const Festival = ({ isMobile }: FestivalProps) => {
             ))
           }
         </div>
-        <Button title={"РЕГИСТРАЦИЯ"} onClick={() => { handleOpenNewTab("https://mcvp.ru/city_events/festival-shkolnogo-sporta-futbolnyj-chellendzh") }} />
+        <Button title={"РЕГИСТРАЦИЯ"} onClick={() => { handleOpenNewTab("https://admin.patriot-sport.ru/admin/") }} />
       </div>
       <div className={
         "bg-[url('/images/desktop/bg/festival-bg.png')] bg-contain bg-no-repeat bg-left w-[100%] h-[700px] hidden md:absolute bottom-[0] left-[0%] -z-10"
