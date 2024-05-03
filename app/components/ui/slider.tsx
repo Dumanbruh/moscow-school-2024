@@ -80,7 +80,7 @@ const Slider = ({
                         top: "50%",
                         transform: "translateY(-50%)"
                     }}>
-                    <LazyLoadImage effect="blur" effect="blur" src={"/images/desktop/slider/right-arrow.png"} />
+                    <img alt={"right-arrow"} src={"/images/desktop/slider/right-arrow.png"} />
                 </div>
                 <Swiper {...swiperParams}>
                     {children}
@@ -91,7 +91,7 @@ const Slider = ({
                         top: "50%",
                         transform: "translateY(-50%)"
                     }}>
-                    <LazyLoadImage effect="blur" effect="blur" src={"/images/desktop/slider/left-arrow.png"} />
+                    <img alt={"right-left"} src={"/images/desktop/slider/left-arrow.png"} />
                 </div>
             </div>
         </div>
