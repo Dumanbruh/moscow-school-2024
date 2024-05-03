@@ -26,7 +26,7 @@ const CortKing = () => {
                         <img key={index} src={image} alt={"description"} />
                     ))}
                 </div>
-                <Button title={"РЕГИСТРАЦИЯ"} onClick={() => {handleOpenNewTab("https://mcvp.ru/city_events/festival-shkolnogo-sporta-basketbolnyj-turnir-1h1-czar-korta")}} />
+                <Button title={"РЕГИСТРАЦИЯ"} onClick={() => { handleOpenNewTab("https://mcvp.ru/city_events/festival-shkolnogo-sporta-basketbolnyj-turnir-1h1-czar-korta") }} />
             </div>
             <div className={
                 "bg-[url('/images/desktop/home/activities/activities-bg.png')] bg-contain bg-no-repeat bg-left w-[100%] h-[600px] absolute bottom-0 left-0 -z-10"
