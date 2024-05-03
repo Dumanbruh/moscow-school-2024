@@ -15,7 +15,7 @@ const Activities = ({ isMobile }: ActivitiesProps) => {
             А также не упусти возможность принять участие в мастер-классе от знаменитой Евы Уваровой, участницы шоу “Танцы” на ТНТ`,
             "img": "/images/desktop/sports/1.png",
             "date": "1 ИЮНЯ",
-            "url": "https://patriotsport.moscow/festival-shkolnogo-sporta/"
+            "url": "https://admin.patriot-sport.ru/admin/"
         },
         {
             "title": "Шахматы",

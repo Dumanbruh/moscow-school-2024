@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../ui/header'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 interface DescriptionProps {
     isMobile?: boolean;
@@ -23,7 +24,12 @@ const Description = ({ isMobile }: DescriptionProps) => {
                     </p>
                     <div className={"hidden md:flex flex-row justify-center overflow-auto items-center gap-9"}>
                         {images.map((image, index) => (
-                            <img key={index} src={image} alt={"description"} />
+                            <LazyLoadImage
+                                effect="blur" 
+                                key={index} 
+                                src={image} 
+                                alt={"description"}
+                            />
                         ))}
                     </div>
                 </div>
@@ -31,7 +37,7 @@ const Description = ({ isMobile }: DescriptionProps) => {
             <div className="w-full mt-8 sm:ml-8 overflow-auto md:hidden">
                 <div className="flex flex-row items-center gap-4 sm:gap-9 whitespace-nowrap">
                     {images.map((image, index) => (
-                        <img key={index} src={image} alt="description" />
+                        <LazyLoadImage effect="blur" key={index} src={image} alt="description" />
                     ))}
                 </div>
             </div>

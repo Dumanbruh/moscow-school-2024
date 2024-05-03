@@ -1,7 +1,6 @@
 "use client"
 
 import { handleOpenNewTab } from '@/app/common/openNewTab'
-import Image from 'next/image'
 import React from 'react'
 
 const Footer = () => {
@@ -70,7 +69,7 @@ const Footer = () => {
                     </div>
                     <iframe
                         className="w-full h-[320px] md:h-[450px] md:w-[590px]"
-                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A0da589e20425482930766656c4a5e5a0f6b30809b740f3a6c7f3411f90130aae&amp;source=constructor"
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A48d48ecdf9dac9ca29b98da2f451f4241a37973675f422de5a973a001b82195e&amp;source=constructor"
                     />
                 </div>
             </div>

@@ -3,11 +3,12 @@ import React from 'react'
 
 interface HeaderProps {
     text?: string;
-    color?: "red" | "blue" | "green" | "pink" | "light-blue";
+    color?: "red" | "blue" | "green" | "pink" | "light-blue" | "yellow";
     isMobile?: boolean;
+    height?: string;
 }
 
-const Header = ({ text, color, isMobile = false }: HeaderProps) => {
+const Header = ({ text, color, isMobile = false, height = "52px" }: HeaderProps) => {
 
     const changeHeader = (color?: string, isMobile?: boolean) => {
         let header = "";
@@ -20,13 +21,15 @@ const Header = ({ text, color, isMobile = false }: HeaderProps) => {
                 return header = isMobile ? "url('/images/mobile/bg/headers/header-pink.svg')" : "url('/images/desktop/bg/headers/header-pink.svg')"
             case "light-blue":
                 return header = "url('/images/desktop/bg/headers/header-light-blue.svg')"
+            case "yellow":
+                return header = isMobile ? "url('/images/mobile/bg/headers/header-yellow.svg')" : "url('/images/desktop/bg/headers/header-yellow.svg')"
             default:
                 return header = isMobile ? "url('/images/mobile/bg/headers/header-blue.svg')" : "url('/images/desktop/bg/headers/header-blue.svg')"
         }
     }
 
     return (
-        <div className={`h-[52px] md:h-[133px] w-full bg-no-repeat bg-center flex justify-center items-center`} style={{ backgroundImage: changeHeader(color, isMobile) }}>
+        <div className={`h-[${height}] md:h-[133px] w-full bg-no-repeat bg-center flex justify-center items-center`} style={{ backgroundImage: changeHeader(color, isMobile) }}>
             <h1 className={"header"} style={{ fontSize: isMobile ? "32px" : "64px", textAlign: "center", whiteSpace: "pre-line", lineHeight: isMobile ? "32px" : "64px" }}>{text}</h1>
         </div>
     )

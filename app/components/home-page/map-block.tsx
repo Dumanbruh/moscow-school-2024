@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Header from '../ui/header'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 interface MapProps {
     isMobile?: boolean;
@@ -21,17 +22,9 @@ const Map = ({ isMobile }: MapProps) => {
     return (
         <div className={"flex flex-col gap-8 md:gap-16 sm:px-3 md:px-40"}>
             <Header text={"карта фестиваля"} isMobile={isMobile} color='pink' />
-            {/* <ModalImage
-                small={"/images/desktop/home/map/1.jpg"}
-                large={"/images/desktop/home/map/1.jpg"}
-            />
-            <ModalImage
-                small={"/images/desktop/home/map/2.jpg"}
-                large={"/images/desktop/home/map/2.jpg"}
-            />; */}
 
-            <img src="/images/desktop/home/map/1.jpg" onClick={() => handleImageClick("/images/desktop/home/map/1.jpg")} alt="map" />
-            <img src="/images/desktop/home/map/2.jpg" onClick={() => handleImageClick("/images/desktop/home/map/2.jpg")} alt="map" />
+            {/* <LazyLoadImage effect="blur" src="/images/desktop/home/map/1.jpg" onClick={() => handleImageClick("/images/desktop/home/map/1.jpg")} alt="map" /> */}
+            <LazyLoadImage effect="blur" src="/images/desktop/home/map/2.jpg" onClick={() => handleImageClick("/images/desktop/home/map/2.jpg")} alt="map" />
 
             {isOpen && (
                 <div className="modal">

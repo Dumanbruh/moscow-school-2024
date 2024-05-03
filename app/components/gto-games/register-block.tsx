@@ -1,5 +1,7 @@
 import React from 'react'
 import Button from '../ui/button'
+import { handleOpenNewTab } from '@/app/common/openNewTab';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 interface RegisterProps {
     isMobile?: boolean;
@@ -44,22 +46,22 @@ const Register = ({ isMobile }: RegisterProps) => {
 
                 <div className={"hidden md:flex flex-col md:flex-row justify-center items-center gap-7"}>
                     {images.map((image, index) => (
-                        <img key={index} src={image} alt={"register-" + index} />
+                        <LazyLoadImage effect="blur" key={index} src={image} alt={"register-" + index} />
                     ))}
                 </div>
 
-                {isMobile ? <></> : <Button title={"ЗАРЕГИСТРИРОВАТЬСЯ"} onClick={() => { }} />}
+                {isMobile ? <></> : <Button title={"ЗАРЕГИСТРИРОВАТЬСЯ"} onClick={() => {handleOpenNewTab("https://admin.patriot-sport.ru/admin/")}} />}
             </div>
             <div className="w-full my-8 sm:ml-8 overflow-auto md:hidden">
                 <div className="flex flex-row items-center gap-4 sm:gap-9 whitespace-nowrap">
                     {images.map((image, index) => (
-                        <img key={index} src={image} alt="description" />
+                        <LazyLoadImage effect="blur" key={index} src={image} alt="description" />
                     ))}
                 </div>
             </div>
             {isMobile ?
                 <div className={"w-full flex justify-center items-center"}>
-                    <Button title={"ЗАРЕГИСТРИРОВАТЬСЯ"} onClick={() => { }} />
+                    <Button title={"ЗАРЕГИСТРИРОВАТЬСЯ"} onClick={() => {handleOpenNewTab("https://admin.patriot-sport.ru/admin/")}} />
                 </div>
                 : <></>
             }

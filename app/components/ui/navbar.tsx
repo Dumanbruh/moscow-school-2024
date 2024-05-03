@@ -59,7 +59,7 @@ const Navbar = () => {
                     <Image
                         width={49} height={48}
                         src={"/images/mobile/nav-icon.png"}
-                        className='cursor-pointer'
+                        className='cursor-pointer block md:hidden'
                         onClick={toggleNav}
                         alt={"nav-icon"}
                     />

@@ -1,4 +1,5 @@
 import React from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 interface InformationProps {
     isMobile?: boolean;
@@ -35,7 +36,7 @@ const Information = ({ isMobile }: InformationProps) => {
                     </p>}
                 <div className={"hidden md:flex flex-col md:flex-row justify-center items-center gap-7"}>
                     {images.map((image, index) => (
-                        <img key={index} src={image} alt={"register-" + index} />
+                        <LazyLoadImage effect="blur" key={index} src={image} alt={"register-" + index} />
                     ))}
                 </div>
 
@@ -47,7 +48,7 @@ const Information = ({ isMobile }: InformationProps) => {
             <div className="w-full my-8 sm:ml-8 overflow-auto md:hidden">
                 <div className="flex flex-row items-center gap-4 sm:gap-9 whitespace-nowrap">
                     {images.map((image, index) => (
-                        <img key={index} src={image} alt="description" />
+                        <LazyLoadImage effect="blur" key={index} src={image} alt="description" />
                     ))}
                 </div>
             </div>

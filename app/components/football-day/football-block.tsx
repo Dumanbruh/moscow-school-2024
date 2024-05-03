@@ -1,19 +1,31 @@
 import React from 'react'
 import Header from '../ui/header'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-const Football = () => {
+interface FootballProps {
+    isMobile?: boolean
+}
+
+const Football = ({ isMobile }: FootballProps) => {
     const images = [
         "/images/desktop/football-day/football/1.png",
         "/images/desktop/football-day/football/2.png",
         "/images/desktop/football-day/football/3.png",
-    ]
+    ];
+
+    const mobileImages = [
+        "/images/mobile/football-day/football/1.png",
+        "/images/mobile/football-day/football/2.png",
+        "/images/mobile/football-day/football/3.png",
+    ];
+
 
     return (
-        <div className={"relative pt-20 pb-24 bg-[#69C5D7] md:px-40"}>
-            <div className={"flex flex-col justify-center items-center gap-16"}>
-                <Header color='pink' text={`Школьная спортивная лига 
+        <div className={"relative pt-4 md:mt-16 pb-4 md:pb-24 bg-[#69C5D7] sm:px-20 md:px-64"}>
+            <div className={"flex flex-col justify-center items-center gap-8 md:gap-16"}>
+                <Header height='90px' isMobile={isMobile} color='yellow' text={`Школьная спортивная лига 
                 по футболу`} />
-                <p className={"font-medium text-blue text-2xl whitespace-pre-line"}>
+                <p className={`${isMobile ? 'font-regular' : 'font-medium'} text-blue ${isMobile ? 'text-xl leading-5' : 'text-2xl'} ${isMobile ? 'px-5' : 'px-0'} whitespace-pre-line`}>
                     {`Финальный день школьной спортивной лиги по футболу среди самых маленьких любителей футбола.
 
                     В решающих матчах сезона школьной лиги за титул чемпиона будут бороться команды юношей и команды девушек 11-12 лет.
@@ -24,10 +36,17 @@ const Football = () => {
 
                     Приходи поддержать любимых спортсменов, будет интересно!`}
                 </p>
-                <div className={"flex flex-col md:flex-row justify-center items-center gap-7"}>
-                    {images.map((image, index) => (
-                        <img key={index} src={image} alt={"description"} />
-                    ))}
+                <div className={"flex flex-row justify-center items-center gap-3 md:gap-7 overflow-auto"}>
+                    {isMobile
+                        ?
+                        mobileImages.map((image, index) => (
+                            <LazyLoadImage effect="blur" key={index} src={image} alt={"match-" + index} />
+                        ))
+                        :
+                        images.map((image, index) => (
+                            <LazyLoadImage effect="blur" key={index} src={image} alt={"match-" + index} />
+                        ))
+                    }
                 </div>
             </div>
         </div>

@@ -5,6 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Navbar from "./components/ui/navbar";
 import Footer from "./components/ui/footer";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export const metadata: Metadata = {
   title: "«Фестиваль школьного спорта»",
