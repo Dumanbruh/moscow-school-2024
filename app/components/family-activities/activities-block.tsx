@@ -59,7 +59,7 @@ const Activities = ({ isMobile }: ActivitiesProps) => {
             >
                 {activities.map((activity, index) => (
                     <SwiperSlide key={index} style={{ width: isMobile ? "400px" : "1100px" }}>
-                        <Card isMobile={isMobile} title={activity.title} desc={activity.desc} img={activity.img} date={activity.date} />
+                        <Card isMobile={isMobile} title={activity.title} url={activity.url} desc={activity.desc} img={activity.img} date={activity.date} />
                     </SwiperSlide>
                 ))}
             </Swiper>
