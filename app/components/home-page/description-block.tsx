@@ -25,9 +25,9 @@ const Description = ({ isMobile }: DescriptionProps) => {
                     <div className={"hidden md:flex flex-row justify-center overflow-auto items-center gap-9"}>
                         {images.map((image, index) => (
                             <LazyLoadImage
-                                effect="blur" 
-                                key={index} 
-                                src={image} 
+                                effect="blur"
+                                key={index}
+                                src={image}
                                 alt={"description"}
                             />
                         ))}

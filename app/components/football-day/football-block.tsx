@@ -21,7 +21,7 @@ const Football = ({ isMobile }: FootballProps) => {
 
 
     return (
-        <div className={"relative pt-4 md:mt-16 pb-4 md:pb-24 bg-[#69C5D7] sm:px-20 md:px-64"}>
+        <div className={"relative pt-4 md:pt-16 pb-4 md:pb-24 bg-[#69C5D7] sm:px-20 md:px-64"}>
             <div className={"flex flex-col justify-center items-center gap-8 md:gap-16"}>
                 <Header height='90px' isMobile={isMobile} color='yellow' text={`Школьная спортивная лига 
                 по футболу`} />

@@ -20,18 +20,19 @@ const Map = ({ isMobile }: MapProps) => {
     };
 
     return (
-        <div className={"flex flex-col gap-8 md:gap-16 sm:px-3 md:px-40"}>
+        <div className={"flex flex-col gap-8 md:gap-16"}>
             <Header text={"карта фестиваля"} isMobile={isMobile} color='pink' />
+            <div className={"sm:px-3 md:px-40"}>
+                {/* <LazyLoadImage effect="blur" src="/images/desktop/home/map/1.jpg" onClick={() => handleImageClick("/images/desktop/home/map/1.jpg")} alt="map" /> */}
+                <LazyLoadImage effect="blur" src="/images/desktop/home/map/2.jpg" onClick={() => handleImageClick("/images/desktop/home/map/2.jpg")} alt="map" />
 
-            {/* <LazyLoadImage effect="blur" src="/images/desktop/home/map/1.jpg" onClick={() => handleImageClick("/images/desktop/home/map/1.jpg")} alt="map" /> */}
-            <LazyLoadImage effect="blur" src="/images/desktop/home/map/2.jpg" onClick={() => handleImageClick("/images/desktop/home/map/2.jpg")} alt="map" />
-
-            {isOpen && (
-                <div className="modal">
-                    <span className="close" onClick={closeModal}>&times;</span>
-                    <img className="modal-content" src={imgSrc} alt="map" />
-                </div>
-            )}
+                {isOpen && (
+                    <div className="modal">
+                        <span className="close" onClick={closeModal}>&times;</span>
+                        <img className="modal-content" src={imgSrc} alt="map" />
+                    </div>
+                )}
+            </div>
         </div>
     )
 }

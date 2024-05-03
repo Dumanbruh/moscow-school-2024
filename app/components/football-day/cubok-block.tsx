@@ -43,9 +43,11 @@ const Cubok = ({ isMobile }: CubokProps) => {
                     }
                 </div>
             </div>
-            <div className={
-                "bg-[url('/images/desktop/home/schedule/bg.png')] bg-contain bg-no-repeat bg-right w-[100%] h-[900px] hidden md:absolute bottom-0 right-0 -z-10"
-            } />
+            {!isMobile &&
+                <div className={
+                    "bg-[url('/images/desktop/home/schedule/bg.png')] bg-contain bg-no-repeat bg-right w-[100%] h-[900px] absolute bottom-0 right-0 -z-10"
+                } />
+            }
             <div className={
                 "bg-[url('/images/mobile/bg/cubok-bg.png')] bg-contain bg-no-repeat bg-right w-[100%] h-[300px] absolute md:hidden bottom-[10%] right-0 -z-10"
             } />

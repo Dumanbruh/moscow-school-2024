@@ -8,8 +8,8 @@ interface HeadlinersProps {
 const Headliners = ({ isMobile }: HeadlinersProps) => {
     return (
         <div className={"relative my-8 md:my-32"}>
+            <Header text={"хедлайнеры фестиваля"} isMobile={isMobile} color='red' />
             <div className={"flex flex-col gap-8 md:gap-16 sm:px-20 md:px-40"}>
-                <Header text={"хедлайнеры фестиваля"} isMobile={isMobile} color='red' />
                 <div className={"flex flex-col gap-2"}>
                     <div className={"bg-[url('/images/desktop/home/headliners/headliners-hidden.png')] bg-contain relative bg-no-repeat bg-center w-[100%] h-[315px] md:h-[700px]"} />
                 </div>

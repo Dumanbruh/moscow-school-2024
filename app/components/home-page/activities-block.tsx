@@ -91,41 +91,42 @@ const Activities = ({ isMobile }: ActivitiesProps) => {
 
     return (
         <div className={"relative"}>
-            <div className={"flex flex-col sm:mx-14 gap-8 md:gap-16 my-20 overflow-visible"}>
+            <div className={"flex flex-col gap-8 md:gap-16 my-20 overflow-visible"}>
                 <Header isMobile={isMobile} text={"Активности фестиваля"} color='green' />
-            </div>
-            <div className={"relative"}>
-                <Swiper
-                    spaceBetween={48}
-                    slidesPerView={'auto'}
-                    modules={[Navigation]}
-                    navigation={{
-                        nextEl: `.next-btn`,
-                        prevEl: `.prev-btn`,
-                    }}
-                    style={{ overflow: "visible", paddingLeft: isMobile ? "50px" : "140px" }}
-                >
-                    {activities.map((activity, index) => (
-                        <SwiperSlide key={index} style={{ width: isMobile ? "400px" : "1100px" }}>
-                            <Card isMobile={isMobile} title={activity.title} desc={activity.desc} img={isMobile && activity.imgMobile ? activity.imgMobile : activity.img} date={activity.date} />
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-                <div className={`next-btn absolute z-10 right-[10%]`}
-                    style={{
-                        display: isMobile ? "none" : "block",
-                        top: "50%",
-                        transform: "translateY(-50%)"
-                    }}>
-                    <img src={"/images/desktop/slider/right-arrow.png"} />
-                </div>
-                <div className={`prev-btn absolute z-10 left-[10%]`}
-                    style={{
-                        display: isMobile ? "none" : "block",
-                        top: "50%",
-                        transform: "translateY(-50%)"
-                    }}>
-                    <img src={"/images/desktop/slider/left-arrow.png"} />
+
+                <div className={"relative"}>
+                    <Swiper
+                        spaceBetween={48}
+                        slidesPerView={'auto'}
+                        modules={[Navigation]}
+                        navigation={{
+                            nextEl: `.next-btn`,
+                            prevEl: `.prev-btn`,
+                        }}
+                        style={{ overflow: "visible", paddingLeft: isMobile ? "50px" : "140px" }}
+                    >
+                        {activities.map((activity, index) => (
+                            <SwiperSlide key={index} style={{ width: isMobile ? "400px" : "1100px" }}>
+                                <Card isMobile={isMobile} title={activity.title} desc={activity.desc} img={isMobile && activity.imgMobile ? activity.imgMobile : activity.img} date={activity.date} />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                    <div className={`next-btn absolute z-10 right-[10%]`}
+                        style={{
+                            display: isMobile ? "none" : "block",
+                            top: "50%",
+                            transform: "translateY(-50%)"
+                        }}>
+                        <img src={"/images/desktop/slider/right-arrow.png"} />
+                    </div>
+                    <div className={`prev-btn absolute z-10 left-[10%]`}
+                        style={{
+                            display: isMobile ? "none" : "block",
+                            top: "50%",
+                            transform: "translateY(-50%)"
+                        }}>
+                        <img src={"/images/desktop/slider/left-arrow.png"} />
+                    </div>
                 </div>
             </div>
             {/* <div className={
