@@ -18,7 +18,7 @@ const Festival = ({ isMobile }: FestivalProps) => {
   const mobileImages = [
     "/images/mobile/football-day/festival/1.png",
     "/images/mobile/football-day/festival/2.png",
-  ]
+  ];
 
   return (
     <div className={"relative pt-4 md:pt-20 pb-9 md:pb-24 sm:px-20 md:px-40"}>

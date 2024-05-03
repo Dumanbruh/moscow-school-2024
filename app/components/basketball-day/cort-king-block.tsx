@@ -11,7 +11,7 @@ const CortKing = () => {
     ]
 
     return (
-        <div className={"relative pt-20 pb-24 bg-[#69C5D7] md:px-40 -z-20"}>
+        <div className={"relative pt-20 pb-24 bg-[#69C5D7] md:px-40"}>
             <div className={"flex flex-col justify-center items-center gap-16"}>
                 <Header color='pink' text={`«Царь корта» - баскетбол 1х1`} />
                 <p className={"font-medium text-blue text-2xl whitespace-pre-line"}>
