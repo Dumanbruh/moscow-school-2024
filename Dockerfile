@@ -6,8 +6,8 @@ FROM base AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
-# RUN npm config set ca=""
-# RUN npm set strict-ssl false
+RUN npm config set ca=""
+RUN npm set strict-ssl false
 
 # Install dependencies based on the preferred package manager
 COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* ./

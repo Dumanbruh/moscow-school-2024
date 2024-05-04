@@ -23,32 +23,34 @@ const CortKing = ({ isMobile }: CortKingProps) => {
 
 
     return (
-        <div className={"relative pt-4 md:mt-16 pb-4 md:pb-24 bg-[#69C5D7] sm:px-20 md:px-64"}>
+        <div className={"relative pt-4 md:mt-16 pb-4 md:pb-24 bg-[#69C5D7]"}>
             <div className={"flex flex-col justify-center items-center gap-8 md:gap-16 z-20"}>
                 <Header height='90px' isMobile={isMobile} color='pink' text={`
                 «Царь корта» - баскетбол 1х1
                 
                 `} />
-                <p className={`${isMobile ? 'font-regular' : 'font-medium'} text-blue ${isMobile ? 'text-xl leading-5' : 'text-2xl'} ${isMobile ? 'px-5' : 'px-0'} whitespace-pre-line z-20`}>
-                    {`Каждый баскетболист уникален. И его особенностью является умение играть один на один. 
+                <div className={"flex flex-col justify-center items-center gap-8 md:gap-16 z-20 sm:px-20 md:px-64"}>
+                    <p className={`${isMobile ? 'font-regular' : 'font-medium'} text-blue ${isMobile ? 'text-xl leading-5' : 'text-2xl'} ${isMobile ? 'px-5' : 'px-0'} whitespace-pre-line z-20`}>
+                        {`Каждый баскетболист уникален. И его особенностью является умение играть один на один. 
 
                     Дриблинг, бросок, умение играть в защите, хитрость, а самое главное холодная голова – всё это поможет стать лучшим на баскетбольной площадке.
 
                     По шесть представителей юношей и девушек определят кто из них самым самый.`}
-                </p>
-                <div className={"flex flex-row justify-center items-center gap-3 md:gap-7 overflow-auto z-20"}>
-                    {isMobile
-                        ?
-                        mobileImages.map((image, index) => (
-                            <LazyLoadImage effect="blur" key={index} src={image} alt={"match-" + index} />
-                        ))
-                        :
-                        images.map((image, index) => (
-                            <LazyLoadImage effect="blur" key={index} src={image} alt={"match-" + index} />
-                        ))
-                    }
+                    </p>
+                    <div className={"flex flex-row justify-center items-center gap-3 md:gap-7 overflow-auto z-20"}>
+                        {isMobile
+                            ?
+                            mobileImages.map((image, index) => (
+                                <LazyLoadImage effect="blur" key={index} src={image} alt={"match-" + index} />
+                            ))
+                            :
+                            images.map((image, index) => (
+                                <LazyLoadImage effect="blur" key={index} src={image} alt={"match-" + index} />
+                            ))
+                        }
+                    </div>
+                    <Button title={"РЕГИСТРАЦИЯ"} onClick={() => { handleOpenNewTab("https://mcvp.ru/city_events/festival-shkolnogo-sporta-basketbolnyj-turnir-1h1-czar-korta") }} />
                 </div>
-                <Button title={"РЕГИСТРАЦИЯ"} onClick={() => { handleOpenNewTab("https://mcvp.ru/city_events/festival-shkolnogo-sporta-basketbolnyj-turnir-1h1-czar-korta") }} />
             </div>
             {!isMobile &&
                 <div className={
