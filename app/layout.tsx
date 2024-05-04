@@ -13,15 +13,21 @@ export const metadata: Metadata = {
     description: "Фестиваль школьного спорта Самое масштабное событием в мире школьного спорта, на котором подведут итоги спортивного сезона 2023/2024 учебного года",
     url: "https://school.moscow.sport/",
     type: "website",
+    images: [
+      {
+        url: "/images/preview.png",
+        alt: "Фестиваль школьного спорта",
+      },
+    ],
   },
-  title: "Фестиваль школьного спорта",
+title: "Фестиваль школьного спорта",
   description: "«1 июня большой спортивный праздник в Лужниках»",
-  icons: [
-    {
-      "rel": "icon",
-      "url": "/images/preview.png"
-    }
-  ]
+    icons: [
+      {
+        "rel": "icon",
+        "url": "/images/preview.png"
+      }
+    ]
 };
 
 export default function RootLayout({
@@ -36,7 +42,7 @@ export default function RootLayout({
         <main>
           {children}
         </main>
-        <div style={{display: "none"}} itemScope itemType="https://schema.org/Organization">
+        <div style={{ display: "none" }} itemScope itemType="https://schema.org/Organization">
           <span itemProp="name">Фестиваль школьного спорта</span>
           <div itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
             Адрес:
