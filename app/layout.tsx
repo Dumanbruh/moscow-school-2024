@@ -8,12 +8,18 @@ import Footer from "./components/ui/footer";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export const metadata: Metadata = {
-  title: "«Фестиваль школьного спорта»",
-  description: "«Московский спорт представляет большой фестиваль школьного спорта, посвящённый празднованию 100-летия Московского Спорта»",
+  openGraph: {
+    title: "Фестиваль школьного спорта",
+    description: "Фестиваль школьного спорта Самое масштабное событием в мире школьного спорта, на котором подведут итоги спортивного сезона 2023/2024 учебного года",
+    url: "https://school.moscow.sport/",
+    type: "website",
+  },
+  title: "Фестиваль школьного спорта",
+  description: "«1 июня большой спортивный праздник в Лужниках»",
   icons: [
     {
       "rel": "icon",
-      "url": ""
+      "url": "/preview.png"
     }
   ]
 };
@@ -30,6 +36,17 @@ export default function RootLayout({
         <main>
           {children}
         </main>
+        <div style={{display: "none"}} itemScope itemType="https://schema.org/Organization">
+          <span itemProp="name">Фестиваль школьного спорта</span>
+          <div itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
+            Адрес:
+            <span itemProp="streetAddress">г.Москва ул. Лужники, дом 24, строение 11</span>
+          </div>
+          <span itemProp="email">school.moscow.sport@yandex.ru</span>
+          <div itemScope itemType="http://schema.org/ImageObject">
+            <img src="/preview.png" itemProp="contentUrl" alt="Organization" />
+          </div>
+        </div>
         <Footer />
       </body>
     </html>
