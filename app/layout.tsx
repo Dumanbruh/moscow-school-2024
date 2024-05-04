@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   icons: [
     {
       "rel": "icon",
-      "url": "/preview.png"
+      "url": "/images/preview.png"
     }
   ]
 };
@@ -44,7 +44,7 @@ export default function RootLayout({
           </div>
           <span itemProp="email">school.moscow.sport@yandex.ru</span>
           <div itemScope itemType="http://schema.org/ImageObject">
-            <img src="/preview.png" itemProp="contentUrl" alt="Organization" />
+            <img src="/images/preview.png" itemProp="contentUrl" alt="Organization" />
           </div>
         </div>
         <Footer />
