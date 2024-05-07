@@ -55,16 +55,16 @@ const Card = ({
                         }}>{date}</p>
                     </div>
 
-                    {isMobile ? <p className={"font-mossport text-4xl h-[90px] uppercase text-center text-white"} style={{ letterSpacing: "-1px", whiteSpace: "pre-line" }}>{title}</p> : <p className={"header"} style={{ letterSpacing: "-1px", lineHeight: "60px", whiteSpace: "pre-line", minHeight: "120px" }}>{title}</p>}
+                    {isMobile ? <p className={"font-mossport text-4xl uppercase text-center text-white"} style={{ letterSpacing: "-1px", whiteSpace: "pre-line" }}>{title}</p> : <p className={"header"} style={{ letterSpacing: "-1px", lineHeight: "60px", whiteSpace: "pre-line" }}>{title}</p>}
 
                     {isMobile
                         ?
                         <div>
-                            <p className={"font-medium text-base cursor-pointer overflow-y-auto h-[230px]"} style={{ lineHeight: "20px", whiteSpace: "pre-line" }}>{desc}</p>
+                            <p className={"font-medium text-base cursor-pointer"} style={{ lineHeight: "20px", whiteSpace: "pre-line" }}>{desc}</p>
                         </div>
                         :
                         <div style={{ scrollbarWidth: 'thin', scrollbarColor: 'transparent transparent' }}>
-                            <p className={"font-medium text-xl cursor-pointer overflow-y-auto h-[250px]"} style={{ lineHeight: "120%", whiteSpace: "pre-line" }}>{desc}</p>
+                            <p className={"font-medium text-xl cursor-pointer"} style={{ lineHeight: "120%", whiteSpace: "pre-line" }}>{desc}</p>
                         </div>
                     }
                     {isMobile && priduUrl &&
