@@ -7,6 +7,7 @@ interface CardProps {
     desc: string;
     img: string;
     url?: string;
+    priduUrl?: string;
     isMobile?: boolean;
 }
 
@@ -16,6 +17,7 @@ const Card = ({
     desc,
     img,
     url,
+    priduUrl,
     isMobile
 }: CardProps) => {
     return (
@@ -53,16 +55,29 @@ const Card = ({
                         }}>{date}</p>
                     </div>
 
-                    {isMobile ? <p className={"font-mossport text-4xl uppercase text-center text-white"} style={{ letterSpacing: "-1px", whiteSpace: "pre-line" }}>{title}</p> : <p className={"header"} style={{ letterSpacing: "-1px", lineHeight: "60px", whiteSpace: "pre-line" }}>{title}</p>}
+                    {isMobile ? <p className={"font-mossport text-4xl h-[90px] uppercase text-center text-white"} style={{ letterSpacing: "-1px", whiteSpace: "pre-line" }}>{title}</p> : <p className={"header"} style={{ letterSpacing: "-1px", lineHeight: "60px", whiteSpace: "pre-line", minHeight: "120px" }}>{title}</p>}
 
                     {isMobile
                         ?
                         <div>
-                            <p className={"font-medium text-base cursor-pointer"} style={{ lineHeight: "20px", whiteSpace: "pre-line" }}>{desc}</p>
+                            <p className={"font-medium text-base cursor-pointer overflow-y-auto h-[230px]"} style={{ lineHeight: "20px", whiteSpace: "pre-line" }}>{desc}</p>
                         </div>
                         :
-                        <div>
-                            <p className={"font-medium text-xl cursor-pointer"} style={{ lineHeight: "120%", whiteSpace: "pre-line" }}>{desc}</p>
+                        <div style={{ scrollbarWidth: 'thin', scrollbarColor: 'transparent transparent' }}>
+                            <p className={"font-medium text-xl cursor-pointer overflow-y-auto h-[250px]"} style={{ lineHeight: "120%", whiteSpace: "pre-line" }}>{desc}</p>
+                        </div>
+                    }
+                    {isMobile && priduUrl &&
+                        <div className={"w-full"}>
+                            <div className={"w-full flex flex-col justify-center items-center"}>
+                                <button className={`w-64 h-16 rounded-lg text-lg font-medium text-black`} style={{
+                                    background: "linear-gradient(90deg, #9ADEE6 0%, #6AC0C9 100%)"
+                                }}
+                                    onClick={() => handleOpenNewTab(priduUrl)}
+                                >
+                                    Я ПРИДУ
+                                </button>
+                            </div>
                         </div>
                     }
                     {isMobile && url &&
@@ -89,6 +104,19 @@ const Card = ({
                                 onClick={() => handleOpenNewTab(url)}
                             >
                                 РЕГИСТРАЦИЯ
+                            </button>
+                        </div>
+                    </div>
+                }
+                {!isMobile && priduUrl &&
+                    <div className={"w-full absolute bottom-12"}>
+                        <div className={"w-full flex flex-col justify-center items-center"}>
+                            <button className={`w-full sm:w-64 h-16 rounded-lg text-lg font-medium text-black`} style={{
+                                background: "linear-gradient(90deg, #9ADEE6 0%, #6AC0C9 100%)"
+                            }}
+                                onClick={() => handleOpenNewTab(priduUrl)}
+                            >
+                                Я ПРИДУ
                             </button>
                         </div>
                     </div>

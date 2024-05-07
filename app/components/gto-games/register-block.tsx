@@ -18,7 +18,7 @@ const Register = ({ isMobile }: RegisterProps) => {
         <div className={"relative md:mt-20 pb-16 md:pb-64 px-5 sm:px-20 md:px-64"}>
             <div className={"flex justify-center items-center flex-col gap-16"}>
                 {isMobile ?
-                    <p className='font-regular text-xl text-blue' style={{ lineHeight: "20px", whiteSpace: "pre-line" }}>{`Все мы знаем, что такое комплекс ГТО, но что же такое Игры ГТО? Рассказываем! Игры ГТО — это новый зрелищный вид спорта на базе нормативов ГТО. На отдельных дорожках для каждого участника установлены спортивные снаряды, которые необходимо пройти всей команде. Тут и упражнения на скорость, силу, гибкость и даже киберспорт. Старт начинается двумя участниками команды одновременно, команде необходимо преодолеть эстафету за максимально короткое время. Что важно! Участник эстафеты может помочь однокоманднику на дистанции и завершить испытание за него. К участию приглашаются:
+                    <p className='font-regular text-xl text-blue' style={{ lineHeight: "20px", whiteSpace: "pre-line" }}>{`Все мы знаем, что такое комплекс ГТО, но что же такое Игры ГТО? Рассказываем! Игры ГТО — это новый зрелищный вид спорта на базе нормативов ГТО. На отдельных дорожках для каждого участника установлены спортивные снаряды, которые необходимо пройти всей команде. Тут и упражнения на скорость, силу, гибкость и даже киберспорт. Старт начинается двумя участниками команды одновременно, команде необходимо преодолеть эстафету за максимально короткое время. Что важно! Участник эстафеты может помочь однокоманднику на дистанции и завершить испытание за него. К участию приглашаются:
                     
                     команды школьников в составе 4-х человек (2 мальчика и 2 девочки);
                     
@@ -27,7 +27,7 @@ const Register = ({ isMobile }: RegisterProps) => {
                     <div dangerouslySetInnerHTML={{
                         __html: `
                             <div>
-                                <p class='font-medium text-2xl text-blue' style='line-height: 32px; white-space: pre-line'>Все мы знаем, что такое комплекс ГТО, но же такое Игры ГТО?</p>
+                                <p class='font-medium text-2xl text-blue' style='line-height: 32px; white-space: pre-line'>Все мы знаем, что такое комплекс ГТО, но что же такое Игры ГТО?</p>
                                 <p class='font-medium text-2xl text-blue' style='line-height: 32px; white-space: pre-line'>Рассказываем! Игры ГТО - это новый зрелищный вид спорта на базе нормативов ГТО. На отдельных дорожках для каждого участника установлены спортивные снаряды, которые необходимо пройти всей команде. Тут и упражнения на скорость, силу, гибкость и даже киберспорт.</p>
                                 
                                 <p class='font-medium text-2xl text-blue' style='line-height: 32px; white-space: pre-line; margin-top: 20px'>Старт начинается двумя участниками команды одновременно, команде необходимо преодолеть эстафету за максимально короткое время. Что важно! Участник эстафеты может помочь однокоманднику на дистанции и завершить испытание за него.</p>
@@ -50,7 +50,7 @@ const Register = ({ isMobile }: RegisterProps) => {
                     ))}
                 </div>
 
-                {isMobile ? <></> : <Button title={"ЗАРЕГИСТРИРОВАТЬСЯ"} onClick={() => {handleOpenNewTab("https://admin.patriot-sport.ru/admin/")}} />}
+                {isMobile ? <></> : <Button title={"ЗАРЕГИСТРИРОВАТЬСЯ"} onClick={() => { handleOpenNewTab("https://admin.patriot-sport.ru/admin/") }} />}
             </div>
             <div className="w-full my-8 sm:ml-8 overflow-auto md:hidden">
                 <div className="flex flex-row items-center gap-4 sm:gap-9 whitespace-nowrap">
@@ -61,7 +61,7 @@ const Register = ({ isMobile }: RegisterProps) => {
             </div>
             {isMobile ?
                 <div className={"w-full flex justify-center items-center"}>
-                    <Button title={"ЗАРЕГИСТРИРОВАТЬСЯ"} onClick={() => {handleOpenNewTab("https://admin.patriot-sport.ru/admin/")}} />
+                    <Button title={"ЗАРЕГИСТРИРОВАТЬСЯ"} onClick={() => { handleOpenNewTab("https://admin.patriot-sport.ru/admin/") }} />
                 </div>
                 : <></>
             }

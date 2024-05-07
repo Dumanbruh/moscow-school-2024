@@ -21,8 +21,7 @@ export default function Page() {
 
     return (
         <div className={"flex flex-col w-full"}>
-            <Cover title={`день 
-            баскетбола`} />
+            <Cover title={`день баскетбола`} />
             <Tournament isMobile={isMobile} />
             <CortKing isMobile={isMobile} />
             <BasketShow isMobile={isMobile} />
