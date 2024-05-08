@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from '../ui/header'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import Button from '../ui/button';
+import { handleOpenNewTab } from '@/app/common/openNewTab';
 
 interface FootballProps {
     isMobile?: boolean
@@ -49,6 +51,7 @@ const Football = ({ isMobile }: FootballProps) => {
                             ))
                         }
                     </div>
+                    <Button title={"Я ПРИДУ"} isPridu onClick={() => { handleOpenNewTab("https://gorizonty.mos.ru/events/5053") }} />
                 </div>
             </div>
         </div>

@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from '../ui/header'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import Button from '../ui/button'
+import { handleOpenNewTab } from '@/app/common/openNewTab'
 
 interface ShowballProps {
   isMobile?: boolean
@@ -21,7 +23,7 @@ const Showball = ({ isMobile }: ShowballProps) => {
     <div className={"relative mt-8 md:mt-16 pb-24"}>
       <div className={"flex flex-col gap-8 md:gap-16"}>
         <Header isMobile={isMobile} text={"шоубол"} />
-        <div className={"flex flex-col gap-8 md:gap-16 sm:px-20 md:px-64"}>
+        <div className={"flex flex-col items-center gap-8 md:gap-16 sm:px-20 md:px-64"}>
           <p className={`${isMobile ? 'font-regular' : 'font-medium'} text-blue ${isMobile ? 'text-xl leading-5' : 'text-2xl'} ${isMobile ? 'px-5' : 'px-0'} whitespace-pre-line`}>
             {`Шоубол - инновационный вид спорта с элементами зрелищных спортивных событий и шоу, гармонично сочетающий в себе форматы самых популярных мировых видов спорта -совокупность разнообразных форматов и элементов правил хоккея, баскетбола, футбола и гандбола.
           
@@ -42,6 +44,7 @@ const Showball = ({ isMobile }: ShowballProps) => {
               ))
             }
           </div>
+          <Button title={"Я ПРИДУ"} isPridu onClick={() => { handleOpenNewTab("https://gorizonty.mos.ru/events/5053") }} />
         </div>
       </div>
       <div className={

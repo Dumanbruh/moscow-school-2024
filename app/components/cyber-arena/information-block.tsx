@@ -1,5 +1,7 @@
 import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import Button from '../ui/button';
+import { handleOpenNewTab } from '@/app/common/openNewTab';
 
 interface InformationProps {
     isMobile?: boolean;
@@ -39,18 +41,21 @@ const Information = ({ isMobile }: InformationProps) => {
                         <LazyLoadImage effect="blur" key={index} src={image} alt={"register-" + index} />
                     ))}
                 </div>
+                {isMobile ? <></> : <Button title={"Я ПРИДУ"} isPridu onClick={() => { handleOpenNewTab("https://gorizonty.mos.ru/events/5053") }} />}
 
                 {/* <Button title={"ЗАРЕГИСТРИРОВАТЬСЯ"} onClick={() => { }} /> */}
                 {isMobile ? <></> : <div className={
                     "bg-[url('/images/desktop/home/activities/activities-bg.png')] bg-contain bg-no-repeat bg-left w-[100%] h-[600px] absolute bottom-[-20%] left-0 -z-10"
                 } />}
             </div>
-            <div className="w-full my-8 sm:ml-8 overflow-auto md:hidden">
+            <div className="w-full flex flex-col items-center gap-16 my-8 sm:ml-8 overflow-auto md:hidden">
                 <div className="flex flex-row items-center gap-4 sm:gap-9 whitespace-nowrap">
                     {images.map((image, index) => (
                         <LazyLoadImage effect="blur" key={index} src={image} alt="description" />
                     ))}
                 </div>
+
+                <Button title={"Я ПРИДУ"} isPridu onClick={() => { handleOpenNewTab("https://gorizonty.mos.ru/events/5053") }} />
             </div>
         </div>
     )

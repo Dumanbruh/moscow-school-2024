@@ -35,7 +35,7 @@ const Activities = ({ isMobile }: ActivitiesProps) => {
             (2 родителя и 1 ребенок)`,
             "img": "/images/desktop/activities/3.jfif",
             "date": "1 ИЮНЯ",
-            "url": "https://mcvp.ru/city_events/festival-shkolnogo-sporta-igry-gto"
+            "url": "https://mcvp.ru/city_events/gorodskie-proekty/festival-shkolnogo-sporta-igry-gto"
         },
         {
             "title": `Любительский турнир

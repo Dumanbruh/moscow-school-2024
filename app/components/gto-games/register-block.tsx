@@ -50,7 +50,7 @@ const Register = ({ isMobile }: RegisterProps) => {
                     ))}
                 </div>
 
-                {isMobile ? <></> : <Button title={"ЗАРЕГИСТРИРОВАТЬСЯ"} onClick={() => { handleOpenNewTab("https://admin.patriot-sport.ru/admin/") }} />}
+                {isMobile ? <></> : <Button title={"ЗАРЕГИСТРИРОВАТЬСЯ"} onClick={() => { handleOpenNewTab("https://mcvp.ru/city_events/gorodskie-proekty/festival-shkolnogo-sporta-igry-gto") }} />}
             </div>
             <div className="w-full my-8 sm:ml-8 overflow-auto md:hidden">
                 <div className="flex flex-row items-center gap-4 sm:gap-9 whitespace-nowrap">
@@ -61,7 +61,7 @@ const Register = ({ isMobile }: RegisterProps) => {
             </div>
             {isMobile ?
                 <div className={"w-full flex justify-center items-center"}>
-                    <Button title={"ЗАРЕГИСТРИРОВАТЬСЯ"} onClick={() => { handleOpenNewTab("https://admin.patriot-sport.ru/admin/") }} />
+                    <Button title={"ЗАРЕГИСТРИРОВАТЬСЯ"} onClick={() => { handleOpenNewTab("https://mcvp.ru/city_events/gorodskie-proekty/festival-shkolnogo-sporta-igry-gto") }} />
                 </div>
                 : <></>
             }

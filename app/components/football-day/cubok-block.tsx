@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from '../ui/header'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import { handleOpenNewTab } from '@/app/common/openNewTab'
+import Button from '../ui/button'
 
 interface CubokProps {
     isMobile?: boolean
@@ -42,6 +44,7 @@ const Cubok = ({ isMobile }: CubokProps) => {
                             ))
                         }
                     </div>
+                    <Button title={"Я ПРИДУ"} isPridu onClick={() => { handleOpenNewTab("https://gorizonty.mos.ru/events/5053") }} />
                 </div>
             </div>
             {!isMobile &&
