@@ -5,6 +5,7 @@ import BasketShow from "../components/basketball-day/basket-show-block";
 import CortKing from "../components/basketball-day/cort-king-block";
 import Tournament from "../components/basketball-day/tournament-block";
 import Cover from "../components/ui/cover";
+import MoscowOpen from "../components/basketball-day/moscow-open-block";
 
 export default function Page() {
     const [isMobile, setIsMobile] = useState(false);
@@ -25,6 +26,7 @@ export default function Page() {
             <Tournament isMobile={isMobile} />
             <CortKing isMobile={isMobile} />
             <BasketShow isMobile={isMobile} />
+            <MoscowOpen isMobile={isMobile} />
         </div>
     );
 }
