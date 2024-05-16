@@ -11,7 +11,7 @@ const Headliners = ({ isMobile }: HeadlinersProps) => {
             <Header text={"хедлайнеры фестиваля"} isMobile={isMobile} color='red' />
             <div className={"flex flex-col gap-8 md:gap-16 sm:px-20 md:px-40"}>
                 <div className={"flex flex-col gap-2"}>
-                    <div className={"bg-[url('/images/desktop/home/headliners/headliners-hidden.png')] bg-contain relative bg-no-repeat bg-center w-[100%] h-[315px] md:h-[700px]"} />
+                    <div className={"bg-[url('/images/desktop/home/headliners/headliners.png')] bg-contain relative bg-no-repeat bg-center w-[100%] h-[315px] md:h-[700px]"} />
                 </div>
             </div>
             <div className={
