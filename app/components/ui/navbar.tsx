@@ -73,6 +73,7 @@ const Navbar = () => {
                         <NavItem name="Киберарена" url="/cyber-arena" />
                         <NavItem name="Спорт" url="/sports" />
                         <NavItem name="День баскетбола" url="/basketball-day" />
+                        <NavItem name="Экстрим парк" url="/extreme-park" />
                     </nav>
                 )}
                 <nav className={"w-full hidden md:flex justify-center flex-col md:flex-row gap-2 md:gap-12"}>
@@ -83,6 +84,7 @@ const Navbar = () => {
                     <NavItem name="Киберарена" url="/cyber-arena" />
                     <NavItem name="Спорт" url="/sports" />
                     <NavItem name="День баскетбола" url="/basketball-day" />
+                    <NavItem name="Экстрим парк" url="/extreme-park" />
                 </nav>
             </div>
         </div>
