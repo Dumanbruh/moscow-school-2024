@@ -14,6 +14,12 @@ const Information = ({ isMobile }: InformationProps) => {
         "/images/desktop/cyber/3.png"
     ];
 
+    const mobileImages = [
+        "/images/desktop/cyber/1.png",
+        "/images/desktop/cyber/2.png",
+        "/images/desktop/cyber/3.png"
+    ];
+
     return (
         <div className={"relative md:mt-20 pb-16 md:pb-8 px-5 sm:px-20 md:px-64"}>
             <div className={"flex justify-center items-center flex-col gap-16"}>
@@ -46,26 +52,28 @@ const Information = ({ isMobile }: InformationProps) => {
                         <a href="mailto:fszayavki@mail.ru" style={{ textDecoration: "underline" }}>fszayavki@mail.ru</a>
                     </p>
                 }
-                <div className={"hidden md:flex flex-col md:flex-row justify-center items-center gap-7"}>
-                    {images.map((image, index) => (
-                        <LazyLoadImage effect="blur" key={index} src={image} alt={"register-" + index} />
-                    ))}
+                <div className={"flex flex-row justify-center items-center gap-3 md:gap-7"}>
+                    {isMobile
+                        ?
+                        mobileImages.map((image, index) => (
+                            <LazyLoadImage effect="blur" key={index} src={image} alt={"tounament-" + index} />
+                        ))
+                        :
+                        images.map((image, index) => (
+                            <LazyLoadImage effect="blur" key={index} src={image} alt={"tounament-" + index} />
+                        ))
+                    }
                 </div>
-                {isMobile ? <></> : <Button title={"ФОРМА ЗАЯВКИ"} onClick={() => { handleOpenNewTab("https://gorizonty.mos.ru/events/5053") }} />}
+                <Button title={"ФОРМА ЗАЯВКИ"} onClick={() => { handleOpenNewTab("https://admin.patriot-sport.ru/admin/") }} />
 
-                {/* <Button title={"ЗАРЕГИСТРИРОВАТЬСЯ"} onClick={() => { }} /> */}
-                {isMobile ? <></> : <div className={
-                    "bg-[url('/images/desktop/home/activities/activities-bg.png')] bg-contain bg-no-repeat bg-left w-[100%] h-[600px] absolute bottom-0 left-0 -z-10"
-                } />}
-            </div>
-            <div className="w-full flex flex-col items-center gap-16 my-8 sm:ml-8 overflow-auto md:hidden">
-                <div className="flex flex-row items-center gap-4 sm:gap-9 whitespace-nowrap">
-                    {images.map((image, index) => (
-                        <LazyLoadImage effect="blur" key={index} src={image} alt="description" />
-                    ))}
-                </div>
-
-                <Button title={"ФОРМА ЗАЯВКИ"} onClick={() => { handleOpenNewTab("https://gorizonty.mos.ru/events/5053") }} />
+                {isMobile
+                    ?
+                    <></>
+                    :
+                    <div className={
+                        "bg-[url('/images/desktop/home/activities/activities-bg.png')] bg-contain bg-no-repeat bg-left w-[100%] h-[600px] absolute bottom-0 left-0 -z-10"
+                    } />
+                }
             </div>
         </div>
     )

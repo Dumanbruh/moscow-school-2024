@@ -8,6 +8,8 @@ interface CardProps {
     img: string;
     url?: string;
     priduUrl?: string;
+    lectoryUrl?: string;
+    masterClassUrl?: string;
     isMobile?: boolean;
 }
 
@@ -18,6 +20,8 @@ const Card = ({
     img,
     url,
     priduUrl,
+    lectoryUrl,
+    masterClassUrl,
     isMobile
 }: CardProps) => {
     return (
@@ -93,6 +97,42 @@ const Card = ({
                             </div>
                         </div>
                     }
+                    {isMobile && (lectoryUrl || masterClassUrl) &&
+                        <div className={"w-full"}>
+                            <div className={"w-full flex flex-col gap-4 justify-center items-center"}>
+                                {masterClassUrl &&
+                                    <div style={{ borderRadius: "8px", overflow: "hidden" }}>
+                                        <button
+                                            className={`w-64 h-16 text-lg font-medium text-[#1E43A6]`}
+                                            style={{
+                                                border: "5px solid transparent",
+                                                borderImage: "linear-gradient(90deg, #1C97AF 0%, #1E42A6 100%)",
+                                                borderImageSlice: 1,
+                                            }}
+                                            onClick={() => handleOpenNewTab(masterClassUrl)}
+                                        >
+                                            МАСТЕР-КЛАСС
+                                        </button>
+                                    </div>
+                                }
+                                {lectoryUrl &&
+                                    <div style={{ borderRadius: "8px", overflow: "hidden" }}>
+                                        <button
+                                            className={`w-64 h-16 text-lg font-medium text-[#1E43A6]`}
+                                            style={{
+                                                border: "5px solid transparent",
+                                                borderImage: "linear-gradient(90deg, #1C97AF 0%, #1E42A6 100%)",
+                                                borderImageSlice: 1,
+                                            }}
+                                            onClick={() => handleOpenNewTab(lectoryUrl)}
+                                        >
+                                            ЛЕКТОРИЙ
+                                        </button>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    }
                 </div>
 
                 {!isMobile && url &&
@@ -118,6 +158,42 @@ const Card = ({
                             >
                                 Я ПРИДУ
                             </button>
+                        </div>
+                    </div>
+                }
+                {!isMobile && (lectoryUrl || masterClassUrl) &&
+                    <div className={"w-full absolute bottom-12"}>
+                        <div className={"w-full flex flex-col gap-7 md:flex-row justify-center items-center"}>
+                            {masterClassUrl &&
+                                <div style={{ borderRadius: "8px", overflow: "hidden" }}>
+                                    <button
+                                        className={`w-full sm:w-64 h-16 text-lg font-medium text-[#1E43A6]`}
+                                        style={{
+                                            border: "5px solid transparent",
+                                            borderImage: "linear-gradient(90deg, #1C97AF 0%, #1E42A6 100%)",
+                                            borderImageSlice: 1,
+                                        }}
+                                        onClick={() => handleOpenNewTab(masterClassUrl)}
+                                    >
+                                        МАСТЕР-КЛАСС
+                                    </button>
+                                </div>
+                            }
+                            {lectoryUrl &&
+                                <div style={{ borderRadius: "8px", overflow: "hidden" }}>
+                                    <button
+                                        className={`w-full sm:w-64 h-16 text-lg font-medium text-[#1E43A6]`}
+                                        style={{
+                                            border: "5px solid transparent",
+                                            borderImage: "linear-gradient(90deg, #1C97AF 0%, #1E42A6 100%)",
+                                            borderImageSlice: 1,
+                                        }}
+                                        onClick={() => handleOpenNewTab(lectoryUrl)}
+                                    >
+                                        ЛЕКТОРИЙ
+                                    </button>
+                                </div>
+                            }
                         </div>
                     </div>
                 }

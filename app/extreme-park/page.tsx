@@ -25,7 +25,9 @@ export default function Page() {
             <div className="relative">
                 <Cover title={"экстрим парк"} />
                 <Information isMobile={isMobile} />
-                <FreeStyle isMobile={isMobile} />
+                <div className={"overflow-hidden"}>
+                    <FreeStyle isMobile={isMobile} />
+                </div>
                 <Schedule isMobile={isMobile} />
             </div>
         </div>
