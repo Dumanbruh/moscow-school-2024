@@ -9,15 +9,15 @@ interface InformationProps {
 
 const Information = ({ isMobile }: InformationProps) => {
     const images = [
-        "/images/desktop/cyber/1.png",
-        "/images/desktop/cyber/2.png",
-        "/images/desktop/cyber/3.png"
+        "/images/desktop/extreme/information/1.png",
+        "/images/desktop/extreme/information/2.png",
+        "/images/desktop/extreme/information/3.png"
     ];
 
     const mobileImages = [
-        "/images/desktop/cyber/1.png",
-        "/images/desktop/cyber/2.png",
-        "/images/desktop/cyber/3.png"
+        "/images/mobile/extreme/information/1.png",
+        "/images/mobile/extreme/information/2.png",
+        "/images/mobile/extreme/information/3.png"
     ];
 
     return (

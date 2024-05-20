@@ -29,6 +29,9 @@ export default function Page() {
                     <FreeStyle isMobile={isMobile} />
                 </div>
                 <Schedule isMobile={isMobile} />
+                <div className={
+                    "bg-[url('/images/desktop/home/activities/activities-bg.png')] bg-contain bg-no-repeat bg-left w-[100%] h-[500px] md:h-[700px] absolute top-[65%] md:top-[60%] left-0 -z-10"
+                } />
             </div>
         </div>
     );

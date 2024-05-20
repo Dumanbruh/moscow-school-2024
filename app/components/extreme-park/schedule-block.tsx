@@ -92,6 +92,7 @@ const Schedule = ({ isMobile }: ScheduleProps) => {
                     ))}
                 </div>
             </div>
+
             <div className={
                 "bg-[url('/images/desktop/home/schedule/bg.png')] bg-contain bg-no-repeat bg-right w-[100%] h-[900px] absolute bottom-0 right-0 -z-10"
             } />
