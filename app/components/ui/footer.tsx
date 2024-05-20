@@ -37,6 +37,10 @@ const Footer = () => {
             "logo": "/images/desktop/logos/footer/vk.svg",
             "url": ""
         },
+        {
+            "logo": "/images/desktop/logos/footer/delo.svg",
+            "url": ""
+        },
     ]
 
 
@@ -63,7 +67,7 @@ const Footer = () => {
                             <div className={"flex flex-col gap-1"}>
                                 <p className={"font-bold text-lg text-[#202020]"}>Место проведения</p>
                                 <p className={"font-light text-lg text-[#262626]"}>ОК Лужники</p>
-                                <p className={"font-light text-lg text-[#262626]"}>г.Москва ул. Лужники, дом 24, строение 11</p>
+                                <p className={"font-light text-lg text-[#262626]"}>г.Москва ул. Лужники, дом 24, строение 7</p>
                             </div>
                         </div>
                     </div>

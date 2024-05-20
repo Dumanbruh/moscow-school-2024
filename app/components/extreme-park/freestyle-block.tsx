@@ -19,8 +19,8 @@ const FreeStyle = ({ isMobile }: FreeStyleProps) => {
             "img": "/images/desktop/extreme/freestyle/1.png",
             "imgMobile": "/images/mobile/extreme/freestyle/1.png",
             "date": "1 ИЮНЯ",
-            "masterClassUrl": "https://mcvp.ru/city_events/gorodskie-proekty/festival-shkolnogo-sporta-igry-gto",
-            "lectoryUrl": "https://mcvp.ru/city_events/gorodskie-proekty/festival-shkolnogo-sporta-igry-gto",
+            "masterClassUrl": "no",
+            "lectoryUrl": "no",
         },
         {
             "title": "Никита Фоминов",
@@ -30,7 +30,7 @@ const FreeStyle = ({ isMobile }: FreeStyleProps) => {
             "img": "/images/desktop/extreme/freestyle/2.png",
             "imgMobile": "/images/mobile/extreme/freestyle/2.png",
             "date": "1 ИЮНЯ",
-            "masterClassUrl": "https://mcvp.ru/city_events/gorodskie-proekty/festival-shkolnogo-sporta-igry-gto",
+            "masterClassUrl": "no",
         },
         {
             "title": "Иван Соловьев",
@@ -43,7 +43,7 @@ const FreeStyle = ({ isMobile }: FreeStyleProps) => {
             "img": "/images/desktop/extreme/freestyle/3.png",
             "imgMobile": "/images/mobile/extreme/freestyle/3.png",
             "date": "1 ИЮНЯ",
-            "masterClassUrl": "https://mcvp.ru/city_events/gorodskie-proekty/festival-shkolnogo-sporta-igry-gto",
+            "masterClassUrl": "no",
         },
         {
             "title": "Егор Кальдиков",
@@ -55,8 +55,8 @@ const FreeStyle = ({ isMobile }: FreeStyleProps) => {
             "img": "/images/desktop/extreme/freestyle/4.png",
             "imgMobile": "/images/mobile/extreme/freestyle/4.png",
             "date": "1 ИЮНЯ",
-            "masterClassUrl": "https://mcvp.ru/city_events/gorodskie-proekty/festival-shkolnogo-sporta-igry-gto",
-            "lectoryUrl": "https://mcvp.ru/city_events/gorodskie-proekty/festival-shkolnogo-sporta-igry-gto",
+            "masterClassUrl": "no",
+            "lectoryUrl": "no",
         },
         {
             "title": "Ирек Ризаев",
@@ -66,7 +66,7 @@ const FreeStyle = ({ isMobile }: FreeStyleProps) => {
             "img": "/images/desktop/extreme/freestyle/5.png",
             "imgMobile": "/images/mobile/extreme/freestyle/5.png",
             "date": "1 ИЮНЯ",
-            "lectoryUrl": "https://mcvp.ru/city_events/gorodskie-proekty/festival-shkolnogo-sporta-igry-gto",
+            "lectoryUrl": "no",
         },
         {
             "title": "Дмитрий Фазолов",
@@ -76,7 +76,7 @@ const FreeStyle = ({ isMobile }: FreeStyleProps) => {
             "img": "/images/desktop/extreme/freestyle/6.png",
             "imgMobile": "/images/mobile/extreme/freestyle/6.png",
             "date": "1 ИЮНЯ",
-            "lectoryUrl": "https://mcvp.ru/city_events/gorodskie-proekty/festival-shkolnogo-sporta-igry-gto",
+            "lectoryUrl": "no",
         },
     ];
 

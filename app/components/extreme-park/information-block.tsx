@@ -1,7 +1,6 @@
 import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Button from '../ui/button';
-import { handleOpenNewTab } from '@/app/common/openNewTab';
 
 interface InformationProps {
     isMobile?: boolean;
@@ -64,7 +63,15 @@ const Information = ({ isMobile }: InformationProps) => {
                         ))
                     }
                 </div>
-                <Button title={"ФОРМА ЗАЯВКИ"} onClick={() => { handleOpenNewTab("https://admin.patriot-sport.ru/admin/") }} />
+                <Button
+                    title={"ФОРМА ЗАЯВКИ"}
+                    onClick={() => {
+                        const link = document.createElement('a');
+                        link.href = '/anketa.docx';
+                        link.download = 'anketa.docx';
+                        link.click();
+                    }}
+                />
 
                 {isMobile
                     ?

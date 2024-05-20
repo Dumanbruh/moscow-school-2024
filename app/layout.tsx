@@ -48,6 +48,22 @@ export default function RootLayout({
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/images/preview.png" />
         <title>Фестиваль школьного спорта</title>
+        <script type="text/javascript" dangerouslySetInnerHTML={{
+          __html: `
+              (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+              m[i].l=1*new Date();
+              for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+              k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+              (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+              ym(97334559, "init", {
+                   clickmap:true,
+                   trackLinks:true,
+                   accurateTrackBounce:true,
+                   webvisor:true
+              });
+            `
+        }} />
       </head>
       <body className="flex flex-col justify-between min-h-screen">
         <Navbar />
@@ -65,6 +81,7 @@ export default function RootLayout({
             <img src="/images/preview.png" itemProp="contentUrl" alt="Organization" />
           </div>
         </div>
+        <noscript><div><img src="https://mc.yandex.ru/watch/97334559" style={{ position: "absolute", left: "-9999px" }} alt="" /></div></noscript>
         <Footer />
       </body>
     </html>
