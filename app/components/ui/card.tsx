@@ -109,7 +109,7 @@ const Card = ({
                                                 borderImage: "linear-gradient(90deg, #1C97AF 0%, #1E42A6 100%)",
                                                 borderImageSlice: 1,
                                             }}
-                                            onClick={() => handleOpenNewTab(masterClassUrl)}
+                                            onClick={() => masterClassUrl !== "no" && handleOpenNewTab(masterClassUrl)}
                                         >
                                             МАСТЕР-КЛАСС
                                         </button>
@@ -124,7 +124,7 @@ const Card = ({
                                                 borderImage: "linear-gradient(90deg, #1C97AF 0%, #1E42A6 100%)",
                                                 borderImageSlice: 1,
                                             }}
-                                            onClick={() => handleOpenNewTab(lectoryUrl)}
+                                            onClick={() => lectoryUrl !== "no" && handleOpenNewTab(lectoryUrl)}
                                         >
                                             ЛЕКТОРИЙ
                                         </button>
@@ -173,7 +173,7 @@ const Card = ({
                                             borderImage: "linear-gradient(90deg, #1C97AF 0%, #1E42A6 100%)",
                                             borderImageSlice: 1,
                                         }}
-                                        onClick={() => handleOpenNewTab(masterClassUrl)}
+                                        onClick={() => masterClassUrl !== "no" && handleOpenNewTab(masterClassUrl)}
                                     >
                                         МАСТЕР-КЛАСС
                                     </button>
@@ -188,7 +188,7 @@ const Card = ({
                                             borderImage: "linear-gradient(90deg, #1C97AF 0%, #1E42A6 100%)",
                                             borderImageSlice: 1,
                                         }}
-                                        onClick={() => handleOpenNewTab(lectoryUrl)}
+                                        onClick={() => lectoryUrl !== "no" && handleOpenNewTab(lectoryUrl)}
                                     >
                                         ЛЕКТОРИЙ
                                     </button>
