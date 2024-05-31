@@ -86,7 +86,7 @@ const Schedule = ({ isMobile }: ScheduleProps) => {
     return (
         <div className={"relative mt-20 pb-32 md:pb-48"}>
             <div className={"flex flex-col gap-16"}>
-                <Header isMobile={isMobile} text={"расписание сцены"} />
+                <Header isMobile={isMobile} text={"расписание"} />
                 <div className={"flex flex-col w-full px-3 sm:px-14 items-center gap-2"}>
                     {schedule.map((event, index) => (
                         <div key={index} className={"flex flex-row items-center w-full md:w-[800px] py-2 px-2 sm:px-4 bg-[#DA1C5C]"}>
